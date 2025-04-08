@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Users, GraduationCap, Heart, Home } from 'lucide-react';
+import { Users, GraduationCap, Heart, Home, Briefcase } from 'lucide-react';
 
 interface StatCardProps {
   icon: React.ReactNode;
