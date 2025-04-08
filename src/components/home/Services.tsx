@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { BookOpen, Heart, Briefcase, Home } from 'lucide-react';
+import { servicesData } from '@/data/servicesData';
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -27,33 +27,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, lin
 };
 
 const Services: React.FC = () => {
-  const services = [
-    {
-      icon: <BookOpen size={32} />,
-      title: "Education Support",
-      description: "We provide educational resources, mentoring, and scholarship opportunities to students of all ages.",
-      link: "/services/education"
-    },
-    {
-      icon: <Heart size={32} />,
-      title: "Healthcare Access",
-      description: "Our healthcare initiatives focus on providing access to medical services and health education.",
-      link: "/services/healthcare"
-    },
-    {
-      icon: <Briefcase size={32} />,
-      title: "Employment Assistance",
-      description: "We offer job training, resume building, and career counseling to help individuals find employment.",
-      link: "/services/employment"
-    },
-    {
-      icon: <Home size={32} />,
-      title: "Community Development",
-      description: "Building stronger communities through local initiatives, workshops, and infrastructure projects.",
-      link: "/services/community"
-    }
-  ];
-
   return (
     <section className="section-padding bg-gray-50">
       <div className="container-custom">
@@ -65,15 +38,18 @@ const Services: React.FC = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              icon={service.icon}
-              title={service.title}
-              description={service.description}
-              link={service.link}
-            />
-          ))}
+          {servicesData.map((service, index) => {
+            const Icon = service.icon;
+            return (
+              <ServiceCard
+                key={index}
+                icon={<Icon size={32} />}
+                title={service.title}
+                description={service.shortDescription}
+                link={`/services/${service.id}`}
+              />
+            );
+          })}
         </div>
       </div>
     </section>
