@@ -1,0 +1,305 @@
+
+import React, { useState } from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Slider } from '@/components/ui/slider';
+import { Card, CardContent } from '@/components/ui/card';
+import { Heart, Users, GraduationCap, Home } from 'lucide-react';
+import { toast } from '@/hooks/use-toast';
+
+const AboutUs = () => {
+  const [donationAmount, setDonationAmount] = useState<number>(25);
+  const [customAmount, setCustomAmount] = useState<string>('');
+  const presetAmounts = [10, 25, 50, 100];
+
+  const handleDonationSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const amount = customAmount ? parseInt(customAmount, 10) : donationAmount;
+    toast({
+      title: "Thank you for your donation!",
+      description: `Your donation of $${amount} will help us make a difference.`,
+      duration: 5000,
+    });
+  };
+
+  const selectAmount = (amount: number) => {
+    setDonationAmount(amount);
+    setCustomAmount('');
+  };
+
+  const handleCustomAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setCustomAmount(e.target.value);
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-grow pt-20">
+        {/* Introduction Section */}
+        <section className="py-16 bg-white">
+          <div className="container-custom">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="animate-fade-in-up">
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
+                  About <span className="text-primary">Empower NGO</span>
+                </h1>
+                <p className="text-gray-600 mb-6 text-lg">
+                  At Empower NGO, our mission is to create a world where every individual has the opportunity 
+                  to reach their full potential, regardless of their socioeconomic background.
+                </p>
+                <p className="text-gray-600 mb-6 text-lg">
+                  We envision communities where education, healthcare, employment, and social support are 
+                  accessible to all, fostering a cycle of empowerment and sustainable development.
+                </p>
+              </div>
+              <div className="relative animate-fade-in">
+                <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
+                  <img 
+                    src="https://images.unsplash.com/photo-1509099652299-30938b0aeb63?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
+                    alt="Diverse team meeting" 
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-secondary rounded-lg -z-10"></div>
+                <div className="absolute -top-4 -left-4 w-32 h-32 bg-primary rounded-lg -z-10"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Our Story Timeline Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container-custom">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800">
+              Our <span className="text-primary">Journey</span>
+            </h2>
+
+            <div className="relative">
+              {/* Vertical line */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-primary"></div>
+
+              {/* Timeline items */}
+              <div className="space-y-16">
+                <div className="relative">
+                  <div className="flex items-center justify-center mb-4">
+                    <div className="bg-primary text-white rounded-full p-3 z-10">
+                      <span className="font-bold">2010</span>
+                    </div>
+                  </div>
+                  <Card className="max-w-2xl mx-auto transform hover:scale-105 transition-transform duration-300">
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-bold mb-2 text-primary">Foundation</h3>
+                      <p className="text-gray-600">
+                        Empower NGO was founded by a group of passionate individuals who saw the 
+                        need for comprehensive community support. Starting with just 5 volunteers, 
+                        we began our first education initiative in an underserved community.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                <div className="relative">
+                  <div className="flex items-center justify-center mb-4">
+                    <div className="bg-primary text-white rounded-full p-3 z-10">
+                      <span className="font-bold">2013</span>
+                    </div>
+                  </div>
+                  <Card className="max-w-2xl mx-auto transform hover:scale-105 transition-transform duration-300">
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-bold mb-2 text-primary">Expanding Our Reach</h3>
+                      <p className="text-gray-600">
+                        We expanded our services to include healthcare assistance and employment 
+                        training. Our team grew to 20 full-time staff and over 50 regular volunteers, 
+                        allowing us to serve three additional communities.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                <div className="relative">
+                  <div className="flex items-center justify-center mb-4">
+                    <div className="bg-primary text-white rounded-full p-3 z-10">
+                      <span className="font-bold">2017</span>
+                    </div>
+                  </div>
+                  <Card className="max-w-2xl mx-auto transform hover:scale-105 transition-transform duration-300">
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-bold mb-2 text-primary">National Recognition</h3>
+                      <p className="text-gray-600">
+                        Our work was recognized nationally when we received the Community Impact 
+                        Award. This recognition helped us form partnerships with major corporations 
+                        and government agencies, significantly increasing our funding and impact.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                <div className="relative">
+                  <div className="flex items-center justify-center mb-4">
+                    <div className="bg-primary text-white rounded-full p-3 z-10">
+                      <span className="font-bold">2021</span>
+                    </div>
+                  </div>
+                  <Card className="max-w-2xl mx-auto transform hover:scale-105 transition-transform duration-300">
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-bold mb-2 text-primary">Digital Transformation</h3>
+                      <p className="text-gray-600">
+                        We embraced technology to enhance our reach and efficiency, launching 
+                        online education platforms and telemedicine services. This transformation 
+                        allowed us to continue serving communities even during global challenges.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                <div className="relative">
+                  <div className="flex items-center justify-center mb-4">
+                    <div className="bg-primary text-white rounded-full p-3 z-10">
+                      <span className="font-bold">Today</span>
+                    </div>
+                  </div>
+                  <Card className="max-w-2xl mx-auto transform hover:scale-105 transition-transform duration-300">
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-bold mb-2 text-primary">Looking Forward</h3>
+                      <p className="text-gray-600">
+                        Today, Empower NGO operates in over 15 communities with 100+ staff and 
+                        500+ volunteers. We continue to innovate and expand our services, always 
+                        guided by our core mission of empowering individuals and building communities.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Impact Highlights Section */}
+        <section className="py-16 bg-primary text-white">
+          <div className="container-custom">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Our Impact</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 text-center transform transition-transform hover:scale-105">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <GraduationCap size={32} />
+                </div>
+                <h3 className="text-4xl font-bold mb-2">12,000+</h3>
+                <p className="text-lg">Students Educated</p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 text-center transform transition-transform hover:scale-105">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Heart size={32} />
+                </div>
+                <h3 className="text-4xl font-bold mb-2">15,000+</h3>
+                <p className="text-lg">Medical Cases Supported</p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 text-center transform transition-transform hover:scale-105">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users size={32} />
+                </div>
+                <h3 className="text-4xl font-bold mb-2">8,000+</h3>
+                <p className="text-lg">Jobs Created</p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 text-center transform transition-transform hover:scale-105">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Home size={32} />
+                </div>
+                <h3 className="text-4xl font-bold mb-2">25+</h3>
+                <p className="text-lg">Communities Improved</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Donation Section */}
+        <section className="py-16 bg-white">
+          <div className="container-custom max-w-4xl">
+            <div className="bg-gray-50 rounded-lg p-8 shadow-lg">
+              <h2 className="text-3xl font-bold mb-6 text-center text-gray-800">
+                Support Our <span className="text-primary">Mission</span>
+              </h2>
+              <p className="text-gray-600 text-center mb-8 text-lg">
+                Your donation helps us continue our work and create lasting change in communities.
+              </p>
+
+              <form onSubmit={handleDonationSubmit} className="space-y-6">
+                <div>
+                  <Label htmlFor="amount" className="text-lg font-medium mb-2 block">
+                    Select an amount
+                  </Label>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                    {presetAmounts.map((amount) => (
+                      <Button
+                        key={amount}
+                        type="button"
+                        variant={donationAmount === amount && !customAmount ? "default" : "outline"}
+                        onClick={() => selectAmount(amount)}
+                        className="h-16 text-lg font-bold"
+                      >
+                        ${amount}
+                      </Button>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="custom-amount" className="text-lg font-medium block">
+                    Or enter a custom amount
+                  </Label>
+                  <div className="flex items-center">
+                    <span className="bg-gray-100 px-3 py-2 rounded-l-md border border-r-0 border-input text-lg">$</span>
+                    <Input
+                      id="custom-amount"
+                      type="number"
+                      min="1"
+                      placeholder="Enter amount"
+                      value={customAmount}
+                      onChange={handleCustomAmountChange}
+                      className="rounded-l-none text-lg"
+                    />
+                  </div>
+                </div>
+
+                <div className="pt-6">
+                  <Button type="submit" className="w-full py-6 text-lg font-bold">
+                    Donate Now
+                  </Button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        {/* Call to Action Section */}
+        <section className="py-16 bg-secondary text-white">
+          <div className="container-custom text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Mission</h2>
+            <p className="text-xl mb-8 max-w-3xl mx-auto">
+              We're always looking for passionate individuals to join our team and help us make a difference. 
+              Whether you want to volunteer, donate, or partner with us, there's a place for you in our community.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild className="bg-white text-secondary hover:bg-gray-100 hover:text-secondary text-lg py-6 px-8">
+                <Link to="/join">Join Us</Link>
+              </Button>
+              <Button asChild className="bg-transparent border-2 border-white hover:bg-white/10 text-lg py-6 px-8">
+                <Link to="/contact">Contact Us</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default AboutUs;
