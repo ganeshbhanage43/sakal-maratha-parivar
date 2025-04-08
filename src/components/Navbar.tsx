@@ -29,6 +29,7 @@ const Navbar: React.FC = () => {
             <Link to="/about" className="font-medium hover:text-primary transition-colors">About Us</Link>
             <Link to="/services" className="font-medium hover:text-primary transition-colors">Services</Link>
             <Link to="/events" className="font-medium hover:text-primary transition-colors">Events</Link>
+            <Link to="/join-us" className="font-medium hover:text-primary transition-colors">Join Us</Link>
             <Link to="/contact" className="font-medium hover:text-primary transition-colors">Contact</Link>
           </div>
           <Button asChild className="btn-primary">
@@ -83,6 +84,13 @@ const Navbar: React.FC = () => {
             onClick={toggleMenu}
           >
             Events
+          </Link>
+          <Link 
+            to="/join-us" 
+            className="font-medium text-lg hover:text-primary transition-colors"
+            onClick={toggleMenu}
+          >
+            Join Us
           </Link>
           <Link 
             to="/contact" 
