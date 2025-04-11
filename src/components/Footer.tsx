@@ -11,10 +11,12 @@ const Footer: React.FC = () => {
           {/* About Section */}
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-white font-heading font-bold text-xl">E</span>
-              </div>
-              <span className="font-heading font-bold text-xl">Empower NGO</span>
+              <img 
+                src="/lovable-uploads/6ceb126d-fd90-413b-bc8c-d5c2690b6231.png"
+                alt="Maryada NGO Logo"
+                className="h-12 w-auto"
+              />
+              <span className="font-heading font-bold text-xl">Maryada NGO</span>
             </div>
             <p className="text-gray-300 mb-6">
               Empowering Lives, Building Futures. We work to create opportunities and provide support for those in need.
@@ -102,7 +104,7 @@ const Footer: React.FC = () => {
       {/* Copyright */}
       <div className="bg-gray-950 py-6">
         <div className="container-custom text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Empower NGO. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Maryada NGO. All rights reserved.</p>
         </div>
       </div>
     </footer>

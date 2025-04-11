@@ -16,10 +16,12 @@ const Navbar: React.FC = () => {
     <nav className="bg-white shadow-md fixed w-full z-50">
       <div className="container-custom flex justify-between items-center py-4">
         <Link to="/" className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-            <span className="text-white font-heading font-bold text-xl">E</span>
-          </div>
-          <span className="font-heading font-bold text-xl">Empower NGO</span>
+          <img 
+            src="/lovable-uploads/6ceb126d-fd90-413b-bc8c-d5c2690b6231.png" 
+            alt="Maryada NGO Logo" 
+            className="h-12 w-auto"
+          />
+          <span className="font-heading font-bold text-xl">Maryada NGO</span>
         </Link>
 
         {/* Desktop Navigation */}
