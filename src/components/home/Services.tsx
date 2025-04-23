@@ -31,7 +31,7 @@ const Services: React.FC = () => {
     <section className="section-padding bg-gray-50">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">संस्थेचे सेवाकार्य</h2>
           <p className="text-gray-600 text-lg">
             We provide a range of services to support our community members and create lasting positive impact.
           </p>

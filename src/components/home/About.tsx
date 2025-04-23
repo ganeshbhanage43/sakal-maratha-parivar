@@ -10,7 +10,7 @@ const About: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 animate-fade-in-up">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
-              About <span className="text-primary">Empower NGO</span>
+              संस्थेचा <span className="text-primary">परिचय</span>
             </h2>
             <p className="text-gray-600 mb-6 text-lg">सकल मराठा परिवार ही संस्था मराठा समाजाच्या शैक्षणिक, व्यवसायिक, नोकरी, आर्थिक आणि वैद्यकीय प्रगतीसाठी कार्यरत आहे. समाजातील प्रत्येक घटकाला मदतीचा हात देण्याचा आमचा संकल्प आहे.</p>
             <p className="text-gray-600 mb-8 text-lg">मराठा तरुण पिढीमध्ये विकासाचे बीज रोवून, समाजाच्या सर्व क्षेत्रात अग्रस्थानी आणणे.</p>
