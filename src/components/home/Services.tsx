@@ -2,29 +2,34 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { servicesData } from '@/data/servicesData';
+
 interface ServiceCardProps {
   icon: React.ReactNode;
   title: string;
   description: string;
   link: string;
 }
+
 const ServiceCard: React.FC<ServiceCardProps> = ({
   icon,
   title,
   description,
   link
 }) => {
-  return <div className="bg-white rounded-lg shadow-lg p-8 transition-transform duration-300 hover:-translate-y-2 group">
+  return (
+    <div className="bg-white rounded-lg shadow-lg p-8 transition-transform duration-300 hover:-translate-y-2 group">
       <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
         {icon}
       </div>
       <h3 className="text-xl font-bold mb-4">{title}</h3>
       <p className="text-gray-600 mb-6">{description}</p>
       <Button asChild variant="outline" className="group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-colors duration-300">
-        <Link to={link}>Learn More</Link>
+        <Link to={link}>अधिक माहितीसाठी</Link>
       </Button>
-    </div>;
+    </div>
+  );
 };
+
 const Services: React.FC = () => {
   return <section className="section-padding bg-gray-50">
       <div className="container-custom">
@@ -42,4 +47,5 @@ const Services: React.FC = () => {
       </div>
     </section>;
 };
+
 export default Services;

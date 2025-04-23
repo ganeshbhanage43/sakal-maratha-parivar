@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -40,7 +39,7 @@ const EventCard: React.FC<EventCardProps> = ({ image, title, date, time, locatio
         <div className="mt-auto">
           <Button asChild variant="ghost" className="group">
             <Link to={link} className="flex items-center text-primary font-medium">
-              Learn More
+              अधिक माहितीसाठी
               <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
@@ -90,7 +89,7 @@ const Events: React.FC = () => {
           </div>
           <Button asChild variant="outline" className="mt-6 md:mt-0">
             <Link to="/events" className="flex items-center">
-              View All Events
+              अधिक माहितीसाठी
               <ArrowRight size={16} className="ml-2" />
             </Link>
           </Button>
