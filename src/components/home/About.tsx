@@ -1,7 +1,9 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+
 const About: React.FC = () => {
   return <section className="section-padding bg-white">
       <div className="container-custom">
@@ -14,7 +16,7 @@ const About: React.FC = () => {
             <p className="text-gray-600 mb-8 text-lg">मराठा तरुण पिढीमध्ये विकासाचे बीज रोवून, समाजाच्या सर्व क्षेत्रात अग्रस्थानी आणणे.</p>
             <Button asChild className="group">
               <Link to="/about" className="flex items-center gap-2">
-                Learn More About Us
+                अधिक माहितीसाठी
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
               </Link>
             </Button>
