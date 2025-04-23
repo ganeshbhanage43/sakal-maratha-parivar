@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+
 const Hero: React.FC = () => {
   return <section className="pt-24 pb-16 md:pt-32 md:pb-24 relative bg-gradient-to-r from-blue-900 to-blue-700 text-white overflow-hidden">
       {/* Background overlay with slight opacity */}
@@ -13,15 +15,15 @@ const Hero: React.FC = () => {
       <div className="container-custom relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">
-            Empowering Lives, <span className="text-secondary">Building Futures</span>
+            सकल मराठा परिवार
           </h1>
-          <p className="text-xl md:text-2xl mb-10 opacity-90 animate-fade-in">This is user defined and to be modified further</p>
+          <p className="text-xl md:text-2xl mb-10 opacity-90 animate-fade-in">
+            कर्म मराठा, धर्म मराठा <br />
+            मराठ्यांच्या प्रगतीसाठी एकत्र येऊया!
+          </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up">
             <Button asChild className="bg-secondary hover:bg-secondary-light text-white font-medium py-3 px-8 rounded-md text-lg transition-colors duration-300">
-              <Link to="/join">Join Us</Link>
-            </Button>
-            <Button asChild className="bg-transparent border-2 border-white text-white font-medium py-3 px-8 rounded-md text-lg hover:bg-white hover:text-blue-700 transition-colors duration-300">
-              <Link to="/donate">Donate Now</Link>
+              <Link to="/join-us">स्वयंसेवक बना!</Link>
             </Button>
           </div>
         </div>
@@ -35,4 +37,5 @@ const Hero: React.FC = () => {
       </div>
     </section>;
 };
+
 export default Hero;
