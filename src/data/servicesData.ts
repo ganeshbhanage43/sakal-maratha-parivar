@@ -1,4 +1,3 @@
-
 import { BookOpen, Heart, Briefcase, Home } from 'lucide-react';
 
 export interface Testimonial {
@@ -24,9 +23,9 @@ export interface ServiceData {
 export const servicesData: ServiceData[] = [
   {
     id: "education",
-    title: "Education Support",
+    title: "शिक्षण क्षेत्र",
     icon: BookOpen,
-    shortDescription: "We provide educational resources, mentoring, and scholarship opportunities to students of all ages.",
+    shortDescription: "महाराष्ट्र सरकार स्थापित स्वायत्त संस्था म्हणून सारथी संस्थेकडून शैक्षणिक क्षेत्रात जे उपक्रम राबविले जातात, ते सर्व उपक्रम तळागाळातील मराठा विद्यार्थ्यांपर्यंत पोहोचविण्याचे काम SMP प्रतिनिधी यांच्याकडून केले जाते.",
     fullDescription: "Our education support program aims to break the cycle of poverty through quality education. We work with underprivileged communities to provide access to educational resources, qualified mentors, and scholarship opportunities. Our approach is holistic, addressing not just academic needs but also providing emotional support and life skills training.",
     benefits: [
       "Access to quality learning materials and resources",
@@ -37,7 +36,7 @@ export const servicesData: ServiceData[] = [
       "After-school programs and homework assistance"
     ],
     image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    ctaText: "Get Educational Support",
+    ctaText: "अधिक माहिती",
     ctaLink: "/contact?service=education",
     testimonials: [
       {
