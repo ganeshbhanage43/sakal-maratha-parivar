@@ -1,9 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-
 const About: React.FC = () => {
   return <section className="section-padding bg-white">
       <div className="container-custom">
@@ -12,7 +10,7 @@ const About: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
               संस्थेचा <span className="text-primary">परिचय</span>
             </h2>
-            <p className="text-gray-600 mb-6 text-lg">सकल मराठा परिवार ही संस्था मराठा समाजाच्या शैक्षणिक, व्यवसायिक, नोकरी, आर्थिक आणि वैद्यकीय प्रगतीसाठी कार्यरत आहे. समाजातील प्रत्येक घटकाला मदतीचा हात देण्याचा आमचा संकल्प आहे.</p>
+            <p className="text-gray-600 mb-6 text-lg">सकल मराठा परिवार (SMP) मराठा समाजाला मुख्यतः शैक्षणिक, व्यवसायिक, नोकरी व आर्थिक क्षेत्रात प्रगती करण्यासाठी सतत प्रयत्नशील राहणारी संस्था असून, सोबतच समाजाचे आपण काहीतरी देणे लागतो या भावनेने वैद्यकीय क्षेत्रात समाजातील सर्व घटकांना सतत मदत करत आहे व भविष्यात करत राहणार आहे. </p>
             <p className="text-gray-600 mb-8 text-lg">मराठा तरुण पिढीमध्ये विकासाचे बीज रोवून, समाजाच्या सर्व क्षेत्रात अग्रस्थानी आणणे.</p>
             <Button asChild className="group">
               <Link to="/about" className="flex items-center gap-2">
