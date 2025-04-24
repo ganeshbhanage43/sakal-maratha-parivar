@@ -38,22 +38,22 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-heading font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/about" className="text-gray-300 hover:text-primary transition-colors">About Us</Link>
+                <Link to="/about" className="text-gray-300 hover:text-primary transition-colors">आमच्याबद्दल थोडक्यात</Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-300 hover:text-primary transition-colors">Our Services</Link>
+                <Link to="/services" className="text-gray-300 hover:text-primary transition-colors">संस्थेचे सेवाकार्य</Link>
               </li>
               <li>
                 <Link to="/events" className="text-gray-300 hover:text-primary transition-colors">Events</Link>
               </li>
               <li>
-                <Link to="/join" className="text-gray-300 hover:text-primary transition-colors">Join Us</Link>
+                <Link to="/join" className="text-gray-300 hover:text-primary transition-colors">सामील व्हा</Link>
               </li>
               <li>
                 <Link to="/donate" className="text-gray-300 hover:text-primary transition-colors">Donate</Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-300 hover:text-primary transition-colors">Contact</Link>
+                <Link to="/contact" className="text-gray-300 hover:text-primary transition-colors">संपर्क</Link>
               </li>
             </ul>
           </div>
