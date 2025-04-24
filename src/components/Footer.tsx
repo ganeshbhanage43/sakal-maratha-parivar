@@ -1,20 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter, Mail, MapPin, Clock } from 'lucide-react';
-
 const Footer: React.FC = () => {
-  return (
-    <footer className="bg-gray-900 text-white">
+  return <footer className="bg-gray-900 text-white">
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* About Section */}
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <img 
-                src="/lovable-uploads/6ceb126d-fd90-413b-bc8c-d5c2690b6231.png"
-                alt="सकल मराठा परिवार (SMP) Logo"
-                className="h-12 w-auto"
-              />
+              <img src="/lovable-uploads/6ceb126d-fd90-413b-bc8c-d5c2690b6231.png" alt="सकल मराठा परिवार (SMP) Logo" className="h-12 w-auto" />
               <span className="font-heading font-bold text-xl">सकल मराठा परिवार (SMP)</span>
             </div>
             <p className="text-gray-300 mb-6">
@@ -44,13 +38,13 @@ const Footer: React.FC = () => {
                 <Link to="/services" className="text-gray-300 hover:text-primary transition-colors">संस्थेचे सेवाकार्य</Link>
               </li>
               <li>
-                <Link to="/events" className="text-gray-300 hover:text-primary transition-colors">Events</Link>
+                
               </li>
               <li>
                 <Link to="/join" className="text-gray-300 hover:text-primary transition-colors">सामील व्हा</Link>
               </li>
               <li>
-                <Link to="/donate" className="text-gray-300 hover:text-primary transition-colors">Donate</Link>
+                
               </li>
               <li>
                 <Link to="/contact" className="text-gray-300 hover:text-primary transition-colors">संपर्क</Link>
@@ -106,8 +100,6 @@ const Footer: React.FC = () => {
           <p>&copy; {new Date().getFullYear()} सकल मराठा परिवार (SMP). All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

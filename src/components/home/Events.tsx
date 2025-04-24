@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Calendar, ArrowRight, MapPin, Clock } from 'lucide-react';
-
 interface EventCardProps {
   image: string;
   title: string;
@@ -11,16 +10,17 @@ interface EventCardProps {
   location: string;
   link: string;
 }
-
-const EventCard: React.FC<EventCardProps> = ({ image, title, date, time, location, link }) => {
-  return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full flex flex-col group">
+const EventCard: React.FC<EventCardProps> = ({
+  image,
+  title,
+  date,
+  time,
+  location,
+  link
+}) => {
+  return <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full flex flex-col group">
       <div className="relative overflow-hidden">
-        <img 
-          src={image} 
-          alt={title} 
-          className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
-        />
+        <img src={image} alt={title} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
         <div className="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
           <Calendar size={14} />
           <span>{date}</span>
@@ -45,72 +45,31 @@ const EventCard: React.FC<EventCardProps> = ({ image, title, date, time, locatio
           </Button>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 const Events: React.FC = () => {
-  const events = [
-    {
-      image: "https://images.unsplash.com/photo-1582213782179-e0d4d3cce817?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Annual Charity Gala",
-      date: "May 15, 2025",
-      time: "6:00 PM - 10:00 PM",
-      location: "Grand Hotel, Downtown",
-      link: "/events/charity-gala"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Community Health Fair",
-      date: "June 2, 2025",
-      time: "10:00 AM - 4:00 PM",
-      location: "City Park",
-      link: "/events/health-fair"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1475483768296-6163e08872a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Youth Leadership Workshop",
-      date: "June 20, 2025",
-      time: "9:00 AM - 3:00 PM",
-      location: "Community Center",
-      link: "/events/leadership-workshop"
-    }
-  ];
-
-  return (
-    <section className="section-padding bg-white">
-      <div className="container-custom">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Upcoming Events</h2>
-            <p className="text-gray-600 text-lg max-w-2xl">
-              Join us at our upcoming events to connect with our community and support our cause.
-            </p>
-          </div>
-          <Button asChild variant="outline" className="mt-6 md:mt-0">
-            <Link to="/events" className="flex items-center">
-              अधिक माहितीसाठी
-              <ArrowRight size={16} className="ml-2" />
-            </Link>
-          </Button>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {events.map((event, index) => (
-            <EventCard
-              key={index}
-              image={event.image}
-              title={event.title}
-              date={event.date}
-              time={event.time}
-              location={event.location}
-              link={event.link}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+  const events = [{
+    image: "https://images.unsplash.com/photo-1582213782179-e0d4d3cce817?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    title: "Annual Charity Gala",
+    date: "May 15, 2025",
+    time: "6:00 PM - 10:00 PM",
+    location: "Grand Hotel, Downtown",
+    link: "/events/charity-gala"
+  }, {
+    image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    title: "Community Health Fair",
+    date: "June 2, 2025",
+    time: "10:00 AM - 4:00 PM",
+    location: "City Park",
+    link: "/events/health-fair"
+  }, {
+    image: "https://images.unsplash.com/photo-1475483768296-6163e08872a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    title: "Youth Leadership Workshop",
+    date: "June 20, 2025",
+    time: "9:00 AM - 3:00 PM",
+    location: "Community Center",
+    link: "/events/leadership-workshop"
+  }];
+  return;
 };
-
 export default Events;

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
@@ -21,7 +20,7 @@ const Navbar: React.FC = () => {
             <Link to="/" className="font-medium hover:text-primary transition-colors">मुखपृष्ठ</Link>
             <Link to="/about" className="font-medium hover:text-primary transition-colors">आमच्याबद्दल थोडक्यात</Link>
             <Link to="/services" className="font-medium hover:text-primary transition-colors">संस्थेचे सेवाकार्य</Link>
-            <Link to="/events" className="font-medium hover:text-primary transition-colors">Events</Link>
+            
             <Link to="/join-us" className="font-medium hover:text-primary transition-colors">सामील व्हा</Link>
             <Link to="/contact" className="font-medium hover:text-primary transition-colors">संपर्क</Link>
           </div>
@@ -64,5 +63,4 @@ const Navbar: React.FC = () => {
       </div>
     </nav>;
 };
-
 export default Navbar;
