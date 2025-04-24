@@ -17,7 +17,7 @@ const Index = () => {
   useEffect(() => {
     // Welcome toast that appears when the page loads
     toast({
-      title: "Welcome to Empower NGO",
+      title: "Welcome to सकल मराठा परिवार (SMP)",
       description: "Explore our website to learn about our mission and how you can get involved.",
       duration: 5000,
     });

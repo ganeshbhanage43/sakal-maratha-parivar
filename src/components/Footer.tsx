@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter, Mail, MapPin, Clock } from 'lucide-react';
@@ -13,10 +12,10 @@ const Footer: React.FC = () => {
             <div className="flex items-center space-x-2 mb-6">
               <img 
                 src="/lovable-uploads/6ceb126d-fd90-413b-bc8c-d5c2690b6231.png"
-                alt="Maryada NGO Logo"
+                alt="सकल मराठा परिवार (SMP) Logo"
                 className="h-12 w-auto"
               />
-              <span className="font-heading font-bold text-xl">Maryada NGO</span>
+              <span className="font-heading font-bold text-xl">सकल मराठा परिवार (SMP)</span>
             </div>
             <p className="text-gray-300 mb-6">
               Empowering Lives, Building Futures. We work to create opportunities and provide support for those in need.
@@ -104,7 +103,7 @@ const Footer: React.FC = () => {
       {/* Copyright */}
       <div className="bg-gray-950 py-6">
         <div className="container-custom text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Maryada NGO. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} सकल मराठा परिवार (SMP). All rights reserved.</p>
         </div>
       </div>
     </footer>
