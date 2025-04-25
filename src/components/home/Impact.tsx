@@ -28,10 +28,7 @@ const Impact: React.FC = () => {
       <div className="container-custom relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">आमचे यश</h2>
-          <p className="text-xl opacity-90">
-            Since 2010, we've made a measurable difference in thousands of lives.
-            Here's our impact by the numbers:
-          </p>
+          <p className="text-xl opacity-90">सकल मराठा परिवार मधील मराठा बांधव समाजकार्यात जवळपास 2016 पासून काम करत आहेत. सुरुवातीपासूनच मराठा समाजाच्या शैक्षणिक, व्यावसायिक, आरोग्य व नोकरी संबंधित अनेक उपक्रमांमध्ये वेळोवेळी जमेल त्या पद्धतीने व वेगवेगळ्या संघटनांच्या माध्यमातून प्रत्येकाने आपले महत्त्वपूर्ण योगदान दिलेले आहे. ही सर्व कामे करत असताना बऱ्याचदा समोरासमोर झालेल्या भेटी मधून असे निदर्शनास आले, की एका सुनियोजित आणि कॉमन प्लॅटफॉर्मची गरज आहे. म्हणूनच सकल मराठा परिवार मधील काही सदस्यांनी मिळून या संघटनेची स्थापना करण्याचा निर्णय घेतला व त्या माध्यमातून वर नमूद केलेल्या उपक्रमा सहित इतरही बरेच मराठा हिताचे कार्यक्रम राबवण्याचा प्रयत्न केला जात आहे. </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
