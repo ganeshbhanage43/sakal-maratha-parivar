@@ -7,9 +7,7 @@ const CTA: React.FC = () => {
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">सामील व्हा</h2>
-          <p className="text-gray-600 text-lg">
-            There are many ways you can support our mission and make a difference in our community.
-          </p>
+          <p className="text-gray-600 text-lg">सोशल मीडियाच्या माध्यमातून सकल मराठा परिवार मधील सदस्य व प्रतिनिधींना संपर्क करू शकता. </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
