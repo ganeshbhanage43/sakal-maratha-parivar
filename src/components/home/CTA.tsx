@@ -16,10 +16,8 @@ const CTA: React.FC = () => {
             <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6 text-secondary">
               <HeartHandshake size={32} />
             </div>
-            <h3 className="text-xl font-bold mb-4">Make a Donation</h3>
-            <p className="text-gray-600 mb-6">
-              Your financial support helps us continue our mission and expand our impact in the community.
-            </p>
+            <h3 className="text-xl font-bold mb-4">आर्थिक साहाय्य </h3>
+            <p className="text-gray-600 mb-6">आमच्यासोबत काम करत असताना आपल्याला कोणत्याही अनिवार्य प्रकारचे आर्थिक सहाय्य करण्याची गरज नाही, यामध्ये फक्त आपल्या सोयीनुसार वेळेची गुंतवणूक करणे महत्त्वाचे आहे.</p>
             <Button asChild className="bg-secondary hover:bg-secondary-light w-full">
               <Link to="/donate">Donate Now</Link>
             </Button>
