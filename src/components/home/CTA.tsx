@@ -28,10 +28,8 @@ const CTA: React.FC = () => {
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 text-primary">
               <Users size={32} />
             </div>
-            <h3 className="text-xl font-bold mb-4">Volunteer With Us</h3>
-            <p className="text-gray-600 mb-6">
-              Join our team of dedicated volunteers and help make a direct impact in our community programs.
-            </p>
+            <h3 className="text-xl font-bold mb-4">आमच्यासोबत सामील व्हा</h3>
+            <p className="text-gray-600 mb-6">संघटनेमध्ये येण्याआधी आपली सामाजिक, राजकीय, शैक्षणिक, व्यावसायिक, आर्थिक पार्श्वभूमी काहीही असली तरी चालेल, फक्त ज्यावेळी सकल मराठा परिवार संघटनेसोबत जोडले जाल त्यावेळी स्वतःच्या वैयक्तिक महत्त्वकांक्षा आणि स्वार्थ यांना बाजूला ठेवून समाजाप्रती आपले कर्तव्य निभावण्याची तयारी असावी.</p>
             <Button asChild className="w-full">
               <Link to="/join">Join Us</Link>
             </Button>
