@@ -40,10 +40,8 @@ const CTA: React.FC = () => {
             <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6 text-accent">
               <Mail size={32} />
             </div>
-            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-            <p className="text-gray-600 mb-6">
-              Have questions or want to learn more about our programs? Get in touch with our team.
-            </p>
+            <h3 className="text-xl font-bold mb-4">संपर्क</h3>
+            <p className="text-gray-600 mb-6">मराठ्यांनी मिळून मराठ्यांच्या प्रगतीला हातभार लावूया आणि मराठा विकासाचे उद्दिष्ट प्राप्त करूया.</p>
             <Button asChild variant="outline" className="w-full hover:bg-accent hover:text-white hover:border-accent">
               <Link to="/contact">Contact Us</Link>
             </Button>
