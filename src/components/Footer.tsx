@@ -11,9 +11,7 @@ const Footer: React.FC = () => {
               <img src="/lovable-uploads/6ceb126d-fd90-413b-bc8c-d5c2690b6231.png" alt="सकल मराठा परिवार (SMP) Logo" className="h-12 w-auto" />
               <span className="font-heading font-bold text-xl">सकल मराठा परिवार (SMP)</span>
             </div>
-            <p className="text-gray-300 mb-6">
-              Empowering Lives, Building Futures. We work to create opportunities and provide support for those in need.
-            </p>
+            <p className="text-gray-300 mb-6">मराठ्यांनी मिळून मराठ्यांच्या प्रगतीला हातभार लावूया आणि मराठा विकासाचे उद्दिष्ट प्राप्त करूया.</p>
             <div className="flex space-x-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                 <Facebook size={20} />
