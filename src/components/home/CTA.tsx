@@ -1,15 +1,12 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { HeartHandshake, Users, Mail } from 'lucide-react';
-
 const CTA: React.FC = () => {
-  return (
-    <section className="section-padding bg-gray-50">
+  return <section className="section-padding bg-gray-50">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Get Involved</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">सामील व्हा</h2>
           <p className="text-gray-600 text-lg">
             There are many ways you can support our mission and make a difference in our community.
           </p>
@@ -59,8 +56,6 @@ const CTA: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTA;
