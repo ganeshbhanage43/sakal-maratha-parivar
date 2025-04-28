@@ -9,10 +9,12 @@ import { Slider } from '@/components/ui/slider';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Users, GraduationCap, Home, Briefcase } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
+
 const AboutUs = () => {
   const [donationAmount, setDonationAmount] = useState<number>(25);
   const [customAmount, setCustomAmount] = useState<string>('');
   const presetAmounts = [10, 25, 50, 100];
+
   const handleDonationSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const amount = customAmount ? parseInt(customAmount, 10) : donationAmount;
@@ -22,13 +24,16 @@ const AboutUs = () => {
       duration: 5000
     });
   };
+
   const selectAmount = (amount: number) => {
     setDonationAmount(amount);
     setCustomAmount('');
   };
+
   const handleCustomAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCustomAmount(e.target.value);
   };
+
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow pt-20">
@@ -38,7 +43,7 @@ const AboutUs = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="animate-fade-in-up">
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-                  About <span className="text-primary">Empower NGO</span>
+                  <span className="text-primary">सकल मराठा परिवार (SMP)</span>
                 </h1>
                 <p className="mb-6 text-lg text-slate-500">सकल मराठा परिवार (SMP) मराठा समाजाला मुख्यतः शैक्षणिक, व्यवसायिक, नोकरी व आर्थिक क्षेत्रात प्रगती करण्यासाठी सतत प्रयत्नशील राहणारी संस्था असून, सोबतच समाजाचे आपण काहीतरी देणे लागतो या भावनेने वैद्यकीय क्षेत्रात समाजातील सर्व घटकांना सतत मदत करत आहे व भविष्यात करत राहणार आहे</p>
                 <p className="mb-6 text-lg text-slate-500">मिशन :- (short term) 
@@ -218,7 +223,7 @@ const AboutUs = () => {
           <div className="container-custom max-w-4xl">
             <div className="bg-gray-50 rounded-lg p-8 shadow-lg">
               <h2 className="text-3xl font-bold mb-6 text-center text-gray-800">
-                Support Our <span className="text-primary">Mission</span>
+                <span className="text-primary">आर्थिक साहाय्य</span>
               </h2>
               <p className="text-gray-600 text-center mb-8 text-lg">आमच्यासोबत काम करत असताना आपल्याला कोणत्याही अनिवार्य प्रकारचे आर्थिक सहाय्य करण्याची गरज नाही, यामध्ये फक्त आपल्या सोयीनुसार वेळेची गुंतवणूक करणे महत्त्वाचे आहे. (स्वेच्छेनुसार केलेले साहाय्य नक्कीच स्वीकारले जाईल.)</p>
 
@@ -270,4 +275,5 @@ const AboutUs = () => {
       <Footer />
     </div>;
 };
+
 export default AboutUs;
