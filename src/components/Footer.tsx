@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter, Mail, MapPin, Clock } from 'lucide-react';
+
 const Footer: React.FC = () => {
   return <footer className="bg-gray-900 text-white">
       <div className="container-custom py-16">
@@ -55,16 +56,16 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-heading font-semibold mb-6">Our Services</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/services/education" className="text-gray-300 hover:text-primary transition-colors">Education Support</Link>
+                <Link to="/services/education" className="text-gray-300 hover:text-primary transition-colors">शिक्षण क्षेत्र</Link>
               </li>
               <li>
-                <Link to="/services/healthcare" className="text-gray-300 hover:text-primary transition-colors">Healthcare Access</Link>
+                <Link to="/services/healthcare" className="text-gray-300 hover:text-primary transition-colors">आरोग्य क्षेत्र</Link>
               </li>
               <li>
-                <Link to="/services/employment" className="text-gray-300 hover:text-primary transition-colors">Employment Assistance</Link>
+                <Link to="/services/employment" className="text-gray-300 hover:text-primary transition-colors">नोकरी व रोजगार क्षेत्र</Link>
               </li>
               <li>
-                <Link to="/services/community" className="text-gray-300 hover:text-primary transition-colors">Community Development</Link>
+                <Link to="/services/community" className="text-gray-300 hover:text-primary transition-colors">उद्योजकता विकास</Link>
               </li>
             </ul>
           </div>
@@ -100,4 +101,5 @@ const Footer: React.FC = () => {
       </div>
     </footer>;
 };
+
 export default Footer;
