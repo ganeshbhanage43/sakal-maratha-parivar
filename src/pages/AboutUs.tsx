@@ -251,11 +251,11 @@ const AboutUs = () => {
         {/* Call to Action Section */}
         <section className="py-16 bg-secondary text-white">
           <div className="container-custom text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Mission</h2>
-            <p className="text-xl mb-8 max-w-3xl mx-auto">
-              We're always looking for passionate individuals to join our team and help us make a difference. 
-              Whether you want to volunteer, donate, or partner with us, there's a place for you in our community.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">सामील व्हा
+          </h2>
+            <p className="text-xl mb-8 max-w-3xl mx-auto">सोशल मीडियाच्या माध्यमातून सकल मराठा परिवार मधील सदस्य व प्रतिनिधींना संपर्क करू शकता.
+
+          </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild className="bg-white text-secondary hover:bg-gray-100 hover:text-secondary text-lg py-6 px-8">
                 <Link to="/join">Join Us</Link>
