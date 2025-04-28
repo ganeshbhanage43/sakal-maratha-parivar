@@ -49,7 +49,7 @@ const AboutUs = () => {
                 <p className="mb-6 text-lg text-slate-500">मिशन :- (short term) 
 सामाजिक उपक्रमांच्या माध्यमातून मराठा तरुण पिढी मध्ये मराठा विकासाचे बीज रोवून एक कट्टर मराठा फळी तयार करणे. 
 व्हिजन :- (Long Term) 
-मराठा समाजातील तरुण पिढीला भविष्यात सामाजिक, आर्थिक, राजकीय, शैक्षणिक, नोकरी, व्यावसायिक इत्यादी प्रत्येक क्षेत्रात अग्रस्थानी आणणे आणि त्यायोगे सामान्य मराठ्यांचे वर्चस्व पुन्हा प्रस्थापित करणे. समाजातील शहरी व ग्रामीण भागातील दुर्लभ मराठा वर्गाला मुख्य प्रवाहात आणण्यासाठी कटिबद्धरीत्या प्रयत्न करणे.</p>
+मराठा समाजातील तरुण पिढीला भविष्यात सामाजिक, आर्थिक, राजकीय, शैक्षणिक, नोकरी, व्यावसायिक इत्यादी प्रत्येक क्षेत्रात अग्रस्थानी आणणे आणि त्यायोगे सामान्य मराठ्यांचे वर्चस्व पुन्हा प्रस्थापित करणे. समाजातील शहरी व ग्रामीण भागातील दु���्लभ मराठा वर्गाला मुख्य प्रवाहात आणण्यासाठी कटिबद्धरीत्या प्रयत्न करणे.</p>
               </div>
               <div className="relative animate-fade-in">
                 <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
@@ -66,8 +66,18 @@ const AboutUs = () => {
         <section className="py-16 bg-gray-50">
           <div className="container-custom">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800">
-              Our <span className="text-primary">Journey</span>
+              आमचा <span className="text-primary">प्रवास</span>
             </h2>
+
+            <div className="max-w-3xl mx-auto mb-12">
+              <Card className="transform hover:scale-105 transition-transform duration-300">
+                <CardContent className="p-6">
+                  <p className="text-gray-600 text-lg">
+                    सकल मराठा परिवार (SMP) मधील मराठा बांधव समाजकार्यात जवळपास 2016 पासून काम करत आहेत. सुरुवातीपासूनच मराठा समाजाच्या शैक्षणिक, व्यावसायिक, आरोग्य व नोकरी संबंधित अनेक उपक्रमांमध्ये वेळोवेळी जमेल त्या पद्धतीने व वेगवेगळ्या संघटनांच्या माध्यमातून प्रत्येकाने आपले महत्त्वपूर्ण योगदान दिलेले आहे.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
 
             <div className="relative">
               {/* Vertical line */}
