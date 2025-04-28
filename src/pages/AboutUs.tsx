@@ -9,12 +9,10 @@ import { Slider } from '@/components/ui/slider';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Users, GraduationCap, Home, Briefcase } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
-
 const AboutUs = () => {
   const [donationAmount, setDonationAmount] = useState<number>(25);
   const [customAmount, setCustomAmount] = useState<string>('');
   const presetAmounts = [10, 25, 50, 100];
-
   const handleDonationSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const amount = customAmount ? parseInt(customAmount, 10) : donationAmount;
@@ -24,16 +22,13 @@ const AboutUs = () => {
       duration: 5000
     });
   };
-
   const selectAmount = (amount: number) => {
     setDonationAmount(amount);
     setCustomAmount('');
   };
-
   const handleCustomAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCustomAmount(e.target.value);
   };
-
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow pt-20">
@@ -85,95 +80,15 @@ const AboutUs = () => {
 
               {/* Timeline items */}
               <div className="space-y-16">
-                <div className="relative">
-                  <div className="flex items-center justify-center mb-4">
-                    <div className="bg-primary text-white rounded-full p-3 z-10">
-                      <span className="font-bold">2010</span>
-                    </div>
-                  </div>
-                  <Card className="max-w-2xl mx-auto transform hover:scale-105 transition-transform duration-300">
-                    <CardContent className="p-6">
-                      <h3 className="text-xl font-bold mb-2 text-primary">Foundation</h3>
-                      <p className="text-gray-600">
-                        Empower NGO was founded by a group of passionate individuals who saw the 
-                        need for comprehensive community support. Starting with just 5 volunteers, 
-                        we began our first education initiative in an underserved community.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
+                
 
-                <div className="relative">
-                  <div className="flex items-center justify-center mb-4">
-                    <div className="bg-primary text-white rounded-full p-3 z-10">
-                      <span className="font-bold">2013</span>
-                    </div>
-                  </div>
-                  <Card className="max-w-2xl mx-auto transform hover:scale-105 transition-transform duration-300">
-                    <CardContent className="p-6">
-                      <h3 className="text-xl font-bold mb-2 text-primary">Expanding Our Reach</h3>
-                      <p className="text-gray-600">
-                        We expanded our services to include healthcare assistance and employment 
-                        training. Our team grew to 20 full-time staff and over 50 regular volunteers, 
-                        allowing us to serve three additional communities.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
+                
 
-                <div className="relative">
-                  <div className="flex items-center justify-center mb-4">
-                    <div className="bg-primary text-white rounded-full p-3 z-10">
-                      <span className="font-bold">2017</span>
-                    </div>
-                  </div>
-                  <Card className="max-w-2xl mx-auto transform hover:scale-105 transition-transform duration-300">
-                    <CardContent className="p-6">
-                      <h3 className="text-xl font-bold mb-2 text-primary">National Recognition</h3>
-                      <p className="text-gray-600">
-                        Our work was recognized nationally when we received the Community Impact 
-                        Award. This recognition helped us form partnerships with major corporations 
-                        and government agencies, significantly increasing our funding and impact.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
+                
 
-                <div className="relative">
-                  <div className="flex items-center justify-center mb-4">
-                    <div className="bg-primary text-white rounded-full p-3 z-10">
-                      <span className="font-bold">2021</span>
-                    </div>
-                  </div>
-                  <Card className="max-w-2xl mx-auto transform hover:scale-105 transition-transform duration-300">
-                    <CardContent className="p-6">
-                      <h3 className="text-xl font-bold mb-2 text-primary">Digital Transformation</h3>
-                      <p className="text-gray-600">
-                        We embraced technology to enhance our reach and efficiency, launching 
-                        online education platforms and telemedicine services. This transformation 
-                        allowed us to continue serving communities even during global challenges.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
+                
 
-                <div className="relative">
-                  <div className="flex items-center justify-center mb-4">
-                    <div className="bg-primary text-white rounded-full p-3 z-10">
-                      <span className="font-bold">Today</span>
-                    </div>
-                  </div>
-                  <Card className="max-w-2xl mx-auto transform hover:scale-105 transition-transform duration-300">
-                    <CardContent className="p-6">
-                      <h3 className="text-xl font-bold mb-2 text-primary">Looking Forward</h3>
-                      <p className="text-gray-600">
-                        Today, Empower NGO operates in over 15 communities with 100+ staff and 
-                        500+ volunteers. We continue to innovate and expand our services, always 
-                        guided by our core mission of empowering individuals and building communities.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -285,5 +200,4 @@ const AboutUs = () => {
       <Footer />
     </div>;
 };
-
 export default AboutUs;
