@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -10,33 +9,27 @@ import { Slider } from '@/components/ui/slider';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Users, GraduationCap, Home } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
-
 const AboutUs = () => {
   const [donationAmount, setDonationAmount] = useState<number>(25);
   const [customAmount, setCustomAmount] = useState<string>('');
   const presetAmounts = [10, 25, 50, 100];
-
   const handleDonationSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const amount = customAmount ? parseInt(customAmount, 10) : donationAmount;
     toast({
       title: "Thank you for your donation!",
       description: `Your donation of $${amount} will help us make a difference.`,
-      duration: 5000,
+      duration: 5000
     });
   };
-
   const selectAmount = (amount: number) => {
     setDonationAmount(amount);
     setCustomAmount('');
   };
-
   const handleCustomAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCustomAmount(e.target.value);
   };
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow pt-20">
         {/* Introduction Section */}
@@ -47,22 +40,20 @@ const AboutUs = () => {
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
                   About <span className="text-primary">Empower NGO</span>
                 </h1>
-                <p className="text-gray-600 mb-6 text-lg">
-                  At Empower NGO, our mission is to create a world where every individual has the opportunity 
-                  to reach their full potential, regardless of their socioeconomic background.
-                </p>
-                <p className="text-gray-600 mb-6 text-lg">
-                  We envision communities where education, healthcare, employment, and social support are 
-                  accessible to all, fostering a cycle of empowerment and sustainable development.
-                </p>
+                <p className="text-gray-600 mb-6 text-lg">सकल मराठा परिवार (SMP) मराठा समाजाला मुख्यतः शैक्षणिक, व्यवसायिक, नोकरी व आर्थिक क्षेत्रात प्रगती करण्यासाठी सतत प्रयत्नशील राहणारी संस्था असून, सोबतच समाजाचे आपण काहीतरी देणे लागतो या भावनेने वैद्यकीय क्षेत्रात समाजातील सर्व घटकांना सतत मदत करत आहे व भविष्यात करत राहणार आहे</p>
+                <p className="mb-6 text-lg text-slate-500">मिशन :- (short term)
+
+सामाजिक उपक्रमांच्या माध्यमातून मराठा तरुण पिढी मध्ये मराठा विकासाचे बीज रोवून एक कट्टर मराठा फळी तयार करणे.
+
+व्हिजन :- (Long Term)
+
+मराठा समाजातील तरुण पिढीला भविष्यात सामाजिक, आर्थिक, राजकीय, शैक्षणिक, नोकरी, व्यावसायिक इत्यादी प्रत्येक क्षेत्रात अग्रस्थानी आणणे आणि त्यायोगे सामान्य मराठ्यांचे वर्चस्व पुन्हा प्रस्थापित करणे.
+
+समाजातील शहरी व ग्रामीण भागातील दुर्लभ मराठा वर्गाला मुख्य प्रवाहात आणण्यासाठी कटिबद्धरीत्या प्रयत्न करणे.</p>
               </div>
               <div className="relative animate-fade-in">
                 <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
-                  <img 
-                    src="https://images.unsplash.com/photo-1509099652299-30938b0aeb63?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
-                    alt="Diverse team meeting" 
-                    className="w-full h-auto object-cover"
-                  />
+                  <img src="https://images.unsplash.com/photo-1509099652299-30938b0aeb63?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Diverse team meeting" className="w-full h-auto object-cover" />
                 </div>
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-secondary rounded-lg -z-10"></div>
                 <div className="absolute -top-4 -left-4 w-32 h-32 bg-primary rounded-lg -z-10"></div>
@@ -236,17 +227,9 @@ const AboutUs = () => {
                     Select an amount
                   </Label>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-                    {presetAmounts.map((amount) => (
-                      <Button
-                        key={amount}
-                        type="button"
-                        variant={donationAmount === amount && !customAmount ? "default" : "outline"}
-                        onClick={() => selectAmount(amount)}
-                        className="h-16 text-lg font-bold"
-                      >
+                    {presetAmounts.map(amount => <Button key={amount} type="button" variant={donationAmount === amount && !customAmount ? "default" : "outline"} onClick={() => selectAmount(amount)} className="h-16 text-lg font-bold">
                         ${amount}
-                      </Button>
-                    ))}
+                      </Button>)}
                   </div>
                 </div>
 
@@ -256,15 +239,7 @@ const AboutUs = () => {
                   </Label>
                   <div className="flex items-center">
                     <span className="bg-gray-100 px-3 py-2 rounded-l-md border border-r-0 border-input text-lg">$</span>
-                    <Input
-                      id="custom-amount"
-                      type="number"
-                      min="1"
-                      placeholder="Enter amount"
-                      value={customAmount}
-                      onChange={handleCustomAmountChange}
-                      className="rounded-l-none text-lg"
-                    />
+                    <Input id="custom-amount" type="number" min="1" placeholder="Enter amount" value={customAmount} onChange={handleCustomAmountChange} className="rounded-l-none text-lg" />
                   </div>
                 </div>
 
@@ -298,8 +273,6 @@ const AboutUs = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default AboutUs;
