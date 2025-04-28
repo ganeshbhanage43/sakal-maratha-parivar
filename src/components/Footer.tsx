@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter, Mail, MapPin, Clock } from 'lucide-react';
-
 const Footer: React.FC = () => {
   return <footer className="bg-gray-900 text-white">
       <div className="container-custom py-16">
@@ -76,17 +75,16 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <MapPin size={20} className="text-primary mt-1 flex-shrink-0" />
-                <span className="text-gray-300">123 Charity Lane, Compassion City, State 12345</span>
+                <span className="text-gray-300">S. No 247/3 Prabhat Nagar, Wahadne Colony Dindori Rd, Nashik, Maharashtra, India, 422004.</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="text-primary flex-shrink-0" />
-                <a href="mailto:info@empowerngo.org" className="text-gray-300 hover:text-primary transition-colors">
-                  info@empowerngo.org
-                </a>
+                <a href="mailto:info@empowerngo.org" className="text-gray-300 hover:text-primary transition-colors">sakalmarathaparivar.96
+@gmail.com</a>
               </li>
               <li className="flex items-center space-x-3">
                 <Clock size={20} className="text-primary flex-shrink-0" />
-                <span className="text-gray-300">Mon-Fri: 9:00 AM - 5:00 PM</span>
+                <span className="text-gray-300">24/7, 365 days</span>
               </li>
             </ul>
           </div>
@@ -101,5 +99,4 @@ const Footer: React.FC = () => {
       </div>
     </footer>;
 };
-
 export default Footer;
