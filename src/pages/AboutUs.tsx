@@ -7,12 +7,14 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Slider } from '@/components/ui/slider';
 import { Card, CardContent } from '@/components/ui/card';
-import { Heart, Users, GraduationCap, Home } from 'lucide-react';
+import { Heart, Users, GraduationCap, Home, Briefcase } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
+
 const AboutUs = () => {
   const [donationAmount, setDonationAmount] = useState<number>(25);
   const [customAmount, setCustomAmount] = useState<string>('');
   const presetAmounts = [10, 25, 50, 100];
+
   const handleDonationSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const amount = customAmount ? parseInt(customAmount, 10) : donationAmount;
@@ -22,13 +24,16 @@ const AboutUs = () => {
       duration: 5000
     });
   };
+
   const selectAmount = (amount: number) => {
     setDonationAmount(amount);
     setCustomAmount('');
   };
+
   const handleCustomAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCustomAmount(e.target.value);
   };
+
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow pt-20">
@@ -165,16 +170,27 @@ const AboutUs = () => {
         </section>
 
         {/* Impact Highlights Section */}
-        <section className="py-16 bg-primary text-white">
-          <div className="container-custom">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Our Impact</h2>
-            
+        <section className="py-16 bg-gradient-to-r from-primary to-blue-700 text-white relative overflow-hidden">
+          {/* Background overlay */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" 
+            style={{
+              backgroundImage: "url('https://images.unsplash.com/photo-1582213782179-e0d4d3cce817?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"
+            }}
+          ></div>
+          
+          <div className="container-custom relative z-10">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">आमचे यश</h2>
+              <p className="text-xl opacity-90">सकल मराठा परिवार मधील मराठा बांधव समाजकार्यात जवळपास 2016 पासून काम करत आहेत. सुरुवातीपासूनच मराठा समाजाच्या शैक्षणिक, व्यावसायिक, आरोग्य व नोकरी संबंधित अनेक उपक्रमांमध्ये वेळोवेळी जमेल त्या पद्धतीने व वेगवेगळ्या संघटनांच्या माध्यमातून प्रत्येकाने आपले महत्त्वपूर्ण योगदान दिलेले आहे.</p>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 text-center transform transition-transform hover:scale-105">
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <GraduationCap size={32} />
                 </div>
-                <h3 className="text-4xl font-bold mb-2">12,000+</h3>
+                <h3 className="text-4xl font-bold mb-2">5,000+</h3>
                 <p className="text-lg">Students Educated</p>
               </div>
               
@@ -182,24 +198,24 @@ const AboutUs = () => {
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart size={32} />
                 </div>
-                <h3 className="text-4xl font-bold mb-2">15,000+</h3>
+                <h3 className="text-4xl font-bold mb-2">2,000+</h3>
                 <p className="text-lg">Medical Cases Supported</p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 text-center transform transition-transform hover:scale-105">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Briefcase size={32} />
+                </div>
+                <h3 className="text-4xl font-bold mb-2">500+</h3>
+                <p className="text-lg">Jobs Secured</p>
               </div>
               
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 text-center transform transition-transform hover:scale-105">
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users size={32} />
                 </div>
-                <h3 className="text-4xl font-bold mb-2">8,000+</h3>
-                <p className="text-lg">Jobs Created</p>
-              </div>
-              
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 text-center transform transition-transform hover:scale-105">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Home size={32} />
-                </div>
-                <h3 className="text-4xl font-bold mb-2">25+</h3>
-                <p className="text-lg">Communities Improved</p>
+                <h3 className="text-4xl font-bold mb-2">100,000+</h3>
+                <p className="text-lg">Members Engaged</p>
               </div>
             </div>
           </div>
@@ -270,4 +286,5 @@ const AboutUs = () => {
       <Footer />
     </div>;
 };
+
 export default AboutUs;
