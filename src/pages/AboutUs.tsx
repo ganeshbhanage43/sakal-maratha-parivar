@@ -9,12 +9,10 @@ import { Slider } from '@/components/ui/slider';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Users, GraduationCap, Home, Briefcase } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
-
 const AboutUs = () => {
   const [donationAmount, setDonationAmount] = useState<number>(25);
   const [customAmount, setCustomAmount] = useState<string>('');
   const presetAmounts = [10, 25, 50, 100];
-
   const handleDonationSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const amount = customAmount ? parseInt(customAmount, 10) : donationAmount;
@@ -24,16 +22,13 @@ const AboutUs = () => {
       duration: 5000
     });
   };
-
   const selectAmount = (amount: number) => {
     setDonationAmount(amount);
     setCustomAmount('');
   };
-
   const handleCustomAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCustomAmount(e.target.value);
   };
-
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow pt-20">
@@ -172,12 +167,9 @@ const AboutUs = () => {
         {/* Impact Highlights Section */}
         <section className="py-16 bg-gradient-to-r from-primary to-blue-700 text-white relative overflow-hidden">
           {/* Background overlay */}
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" 
-            style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1582213782179-e0d4d3cce817?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"
-            }}
-          ></div>
+          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1582213782179-e0d4d3cce817?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"
+        }}></div>
           
           <div className="container-custom relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-16">
@@ -228,9 +220,7 @@ const AboutUs = () => {
               <h2 className="text-3xl font-bold mb-6 text-center text-gray-800">
                 Support Our <span className="text-primary">Mission</span>
               </h2>
-              <p className="text-gray-600 text-center mb-8 text-lg">
-                Your donation helps us continue our work and create lasting change in communities.
-              </p>
+              <p className="text-gray-600 text-center mb-8 text-lg">आमच्यासोबत काम करत असताना आपल्याला कोणत्याही अनिवार्य प्रकारचे आर्थिक सहाय्य करण्याची गरज नाही, यामध्ये फक्त आपल्या सोयीनुसार वेळेची गुंतवणूक करणे महत्त्वाचे आहे. (स्वेच्छेनुसार केलेले साहाय्य नक्कीच स्वीकारले जाईल.)</p>
 
               <form onSubmit={handleDonationSubmit} className="space-y-6">
                 <div>
@@ -286,5 +276,4 @@ const AboutUs = () => {
       <Footer />
     </div>;
 };
-
 export default AboutUs;
