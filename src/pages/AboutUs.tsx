@@ -224,13 +224,9 @@ const AboutUs = () => {
 
               <form onSubmit={handleDonationSubmit} className="space-y-6">
                 <div>
-                  <Label htmlFor="amount" className="text-lg font-medium mb-2 block">
-                    Select an amount
-                  </Label>
+                  
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-                    {presetAmounts.map(amount => <Button key={amount} type="button" variant={donationAmount === amount && !customAmount ? "default" : "outline"} onClick={() => selectAmount(amount)} className="h-16 text-lg font-bold">
-                        ${amount}
-                      </Button>)}
+                    {presetAmounts.map(amount => {})}
                   </div>
                 </div>
 
@@ -239,15 +235,13 @@ const AboutUs = () => {
                     Or enter a custom amount
                   </Label>
                   <div className="flex items-center">
-                    <span className="bg-gray-100 px-3 py-2 rounded-l-md border border-r-0 border-input text-lg">$</span>
-                    <Input id="custom-amount" type="number" min="1" placeholder="Enter amount" value={customAmount} onChange={handleCustomAmountChange} className="rounded-l-none text-lg" />
+                    
+                    
                   </div>
                 </div>
 
                 <div className="pt-6">
-                  <Button type="submit" className="w-full py-6 text-lg font-bold">
-                    Donate Now
-                  </Button>
+                  
                 </div>
               </form>
             </div>
