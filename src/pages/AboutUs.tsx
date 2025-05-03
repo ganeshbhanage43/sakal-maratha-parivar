@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -6,13 +7,15 @@ import { Link } from 'react-router-dom';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Slider } from '@/components/ui/slider';
-import { Card, CardContent } from '@/components/ui/card';
-import { Heart, Users, GraduationCap, Home, Briefcase } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Heart, Users, GraduationCap, Home, Briefcase, FileText, Calendar, ChartBar, Info } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
+
 const AboutUs = () => {
   const [donationAmount, setDonationAmount] = useState<number>(25);
   const [customAmount, setCustomAmount] = useState<string>('');
   const presetAmounts = [10, 25, 50, 100];
+  
   const handleDonationSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const amount = customAmount ? parseInt(customAmount, 10) : donationAmount;
@@ -22,13 +25,16 @@ const AboutUs = () => {
       duration: 5000
     });
   };
+  
   const selectAmount = (amount: number) => {
     setDonationAmount(amount);
     setCustomAmount('');
   };
+  
   const handleCustomAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCustomAmount(e.target.value);
   };
+  
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow pt-20">
@@ -41,9 +47,9 @@ const AboutUs = () => {
                   <span className="text-primary">सकल मराठा परिवार (SMP)</span>
                 </h1>
                 <p className="mb-6 text-lg text-slate-500">सकल मराठा परिवार (SMP) मराठा समाजाला मुख्यतः शैक्षणिक, व्यवसायिक, नोकरी व आर्थिक क्षेत्रात प्रगती करण्यासाठी सतत प्रयत्नशील राहणारी संस्था असून, सोबतच समाजाचे आपण काहीतरी देणे लागतो या भावनेने वैद्यकीय क्षेत्रात समाजातील सर्व घटकांना सतत मदत करत आहे व भविष्यात करत राहणार आहे</p>
-                <p className="mb-6 text-lg text-slate-500">मिशन :- (short term) 
-सामाजिक उपक्रमांच्या माध्यमातून मराठा तरुण पिढी मध्ये मराठा विकासाचे बीज रोवून एक कट्टर मराठा फळी तयार करणे. 
-व्हिजन :- (Long Term) 
+                <p className="mb-6 text-lg text-slate-500">मिशन :- (short term) 
+सामाजिक उपक्रमांच्या माध्यमातून मराठा तरुण पिढी मध्ये मराठा विकासाचे बीज रोवून एक कट्टर मराठा फळी तयार करणे. 
+व्हिजन :- (Long Term) 
 मराठा समाजातील तरुण पिढीला भविष्यात सामाजिक, आर्थिक, राजकीय, शैक्षणिक, नोकरी, व्यावसायिक इत्यादी प्रत्येक क्षेत्रात अग्रस्थानी आणणे आणि त्यायोगे सामान्य मराठ्यांचे वर्चस्व पुन्हा प्रस्थापित करणे. समाजातील शहरी व ग्रामीण भागातील दु���्लभ मराठा वर्गाला मुख्य प्रवाहात आणण्यासाठी कटिबद्धरीत्या प्रयत्न करणे.</p>
               </div>
               <div className="relative animate-fade-in">
@@ -67,45 +73,97 @@ const AboutUs = () => {
             <div className="max-w-3xl mx-auto mb-12">
               <Card className="transform hover:scale-105 transition-transform duration-300">
                 <CardContent className="p-6">
-                  <p className="text-gray-600 text-lg">स्थापना वर्ष: सकल मराठा परिवार संघटनेची स्थापना ११ ऑक्टोबर 2022 रोजी झालेली असून या संघटनेतील बरेच सदस्य व प्रतिनिधी यांनी 2016 पासून वेगवेगळ्या संघटनांच्या माध्यमातून मराठा समाजाच्या हिताचे जेवढे उपक्रम होत आलेले आहेत, त्या सर्वांमध्ये आपापल्या पातळीवर सहभाग नोंदवलेला आहे. 
+                  <p className="text-gray-600 text-lg">स्थापना वर्ष: सकल मराठा परिवार संघटनेची स्थापना ११ ऑक्टोबर 2022 रोजी झालेली असून या संघटनेतील बरेच सदस्य व प्रतिनिधी यांनी 2016 पासून वेगवेगळ्या संघटनांच्या माध्यमातून मराठा समाजाच्या हिताचे जेवढे उपक्रम होत आलेले आहेत, त्या सर्वांमध्ये आपापल्या पातळीवर सहभाग नोंदवलेला आहे.</p>
+                </CardContent>
+              </Card>
+            </div>
 
-
-पार्श्वभूमी माहिती:  सकल मराठा परिवार मधील मराठा बांधव समाजकार्यात जवळपास 2016 पासून काम करत आहेत. सुरुवातीपासूनच मराठा समाजाच्या शैक्षणिक, व्यावसायिक, आरोग्य व नोकरी संबंधित अनेक उपक्रमांमध्ये वेळोवेळी जमेल त्या पद्धतीने व वेगवेगळ्या संघटनांच्या माध्यमातून प्रत्येकाने आपले महत्त्वपूर्ण योगदान दिलेले आहे. ही सर्व कामे करत असताना बऱ्याचदा समोरासमोर झालेल्या भेटी मधून असे निदर्शनास आले, की एका सुनियोजित आणि कॉमन प्लॅटफॉर्मची गरज आहे. म्हणूनच सकल मराठा परिवार मधील काही सदस्यांनी मिळून या संघटनेची स्थापना करण्याचा निर्णय घेतला व त्या माध्यमातून वर नमूद केलेल्या उपक्रमा सहित इतरही बरेच मराठा हिताचे कार्यक्रम राबवण्याचा प्रयत्न केला जात आहे.
-
-
-आव्हाने आणि भविष्यातील अडचणी:-
-
-
-
-विविध राजकीय पक्षांसोबत जोडलेल्या मराठा तरुणांमध्ये जागृती करून त्यांच्यामध्ये मराठावाद जोपासणे गरजेचे आहे. एक कट्टर मराठा म्हणून आपल्या सोबत जोडलेल्या प्रत्येक बांधवाने संघटनेचे ध्येय समजून घेऊन त्या दिशेने जमेल त्या पातळीवर जबाबदारी घेऊन प्रयत्न केले पाहिजेत.
-
-मराठा तरुणांमध्ये क्षमता असूनही नौकऱ्या अभावी वाढती बेरोजगारी व त्यामुळे येणाऱ्या नैराश्यातुन काही तरुण गुन्हेगारी कडे वळण्याची शक्यता असू शकते व त्यामुळे त्यांचा दैनंदिन जीवनातील कुटुंबावर होणारा परिणाम यासाठी कायमस्वरूपी उपाययोजना करणे.
-
-
-
-
-संघटना बांधत असताना आपल्या प्रत्येक बांधवाची ठराविक माहिती आपल्याकडे एका ठिकाणी जतन  करून ठेवणे गरजेचे आहे, जेणेकरून प्रत्येक क्षेत्रातील तज्ञ बांधवांचे अनुभव आणि मार्गदर्शन आपल्यातील गरजू मराठा बांधवांपर्यंत पोहोचवणे सोपे जाईल.
-
-
-
-
-कोणतीही संघटना चालवत असताना प्रत्येकाची ठराविक कार्यप्रणाली निश्चित असते. ज्या पद्धतीने अति लोकशाही ठाम निर्णय घेण्यास बाधा ठरू शकते, त्याच पद्धतीने संघटनेमध्ये काम करत असताना बऱ्याच वेळा काही ठाम निर्णय भावनिक न होता घ्यावे लागतात. म्हणूनच प्रत्येक संघटनेला एका भक्कम लीडरशिपची गरज असते आणि लीडरशिप कडून ठरवून दिलेल्या प्रोसेस नुसार सर्व कामे आणि उपक्रम होणे गरजेचे असते.
-
-
-
-
-प्रत्येक लीडर, प्रतिनिधी आणि सदस्य यांना ठरवून दिलेल्या जबाबदारीवर काम करत असताना त्या प्रत्येकाचे एक उत्तरदायित्व असते. टीममधील प्रत्येकाच्या मताचा आदर करणे आणि त्यावर टीम मध्ये चर्चा घडवून आणणे हे लीडरचे कर्तव्य असायला पाहिजे. प्रतिनिधी आणि सदस्य यांनी सुद्धा एखाद्या निर्णयावर आपले मत मांडताना आपली मते एकमेकांवर न लादता बहुमताचा आदर केला पाहिजे. संघटनेमध्ये काम करत असताना अधिकार आणि कर्तव्य यांचा योग्य समतोल साधता आला पाहिजे. 
-
-
-
-भविष्यातील सामान्य नियोजन:-
-
-एखाद्या समाजामध्ये राहत असलेल्या सदस्यांची संख्या त्या समाजाची ताकद ठरू शकते. परंतु हे तेव्हाच शक्य होईल जेव्हा तो समाज आणि त्यामध्ये राहत असलेल्या प्रत्येक व्यक्ती आणि सदस्यांमध्ये एकीची भावना असेल.  महाराष्ट्रातील मराठा समाजाच्या संख्येबद्दल सर्वजण अवगत आहेतच, पण एवढी मोठी संख्या असून सुद्धा मराठा समाजामध्ये एकीच्या भावनेची उणीव कायम भासत राहते. ही उणीव भासण्याचे एक महत्त्वाचे कारण म्हणजे मराठा समाजातील श्रीमंत आणि गरीब यांच्यामधील रुंदावत चाललेली दरी होय. 
-
-सकल मराठा परिवारामध्ये  सहभागी होणाऱ्या सदस्यांपैकी बहुतांश लोक सामान्य  मध्यमवर्गीय किंवा गरीब कुटुंबातील आहेत. श्रीमंत वर्गातील मराठा बांधवांची आपल्या सोबत येण्याची इच्छा असून सुद्धा त्यांच्या वैयक्तिक राजकीय, सामाजिक किंवा पारिवारिक महत्त्वकांक्षा जपण्यासाठी ते प्रत्यक्षपणे आपला सहभाग दर्शवू शकत नाही. या सगळ्यांमध्ये एक सकारात्मक गोष्ट अशी, की सकल मराठा परिवारासोबत सधन वर्गातील मराठा समाज अप्रत्यक्षपणे जोडला गेलेला/जात आहे. सामान्य वर्गातील सदस्यांनी आपापल्या परीने संघटनेतील उपक्रमांमध्ये आपला वेळ देऊन जबाबदारी पार पाडण्याची गरज आहे.
-
-
-                </p>
+            {/* Additional Information Sections */}
+            <div className="space-y-8 mt-12">
+              {/* Background Section */}
+              <Card className="bg-white shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-bold flex items-center gap-2">
+                    <Info size={24} className="text-primary" /> पार्श्वभूमी माहिती:
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-lg">सकल मराठा परिवार मधील मराठा बांधव समाजकार्यात जवळपास 2016 पासून काम करत आहेत. सुरुवातीपासूनच मराठा समाजाच्या शैक्षणिक, व्यावसायिक, आरोग्य व नोकरी संबंधित अनेक उपक्रमांमध्ये वेळोवेळी जमेल त्या पद्धतीने व वेगवेगळ्या संघटनांच्या माध्यमातून प्रत्येकाने आपले महत्त्वपूर्ण योगदान दिलेले आहे. ही सर्व कामे करत असताना बऱ्याचदा समोरासमोर झालेल्या भेटी मधून असे निदर्शनास आले, की एका सुनियोजित आणि कॉमन प्लॅटफॉर्मची गरज आहे. म्हणूनच सकल मराठा परिवार मधील काही सदस्यांनी मिळून या संघटनेची स्थापना करण्याचा निर्णय घेतला व त्या माध्यमातून वर नमूद केलेल्या उपक्रमा सहित इतरही बरेच मराठा हिताचे कार्यक्रम राबवण्याचा प्रयत्न केला जात आहे.</p>
+                </CardContent>
+              </Card>
+              
+              {/* Challenges Section */}
+              <Card className="bg-white shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-bold flex items-center gap-2">
+                    <FileText size={24} className="text-primary" /> आव्हाने आणि भविष्यातील अडचणी:
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-lg">विविध राजकीय पक्षांसोबत जोडलेल्या मराठा तरुणांमध्ये जागृती करून त्यांच्यामध्ये मराठावाद जोपासणे गरजेचे आहे. एक कट्टर मराठा म्हणून आपल्या सोबत जोडलेल्या प्रत्येक बांधवाने संघटनेचे ध्येय समजून घेऊन त्या दिशेने जमेल त्या पातळीवर जबाबदारी घेऊन प्रयत्न केले पाहिजेत.</p>
+                  
+                  <p className="text-gray-600 text-lg mt-4">मराठा तरुणांमध्ये क्षमता असूनही नौकऱ्या अभावी वाढती बेरोजगारी व त्यामुळे येणाऱ्या नैराश्यातुन काही तरुण गुन्हेगारी कडे वळण्याची शक्यता असू शकते व त्यामुळे त्यांचा दैनंदिन जीवनातील कुटुंबावर होणारा परिणाम यासाठी कायमस्वरूपी उपाययोजना करणे.</p>
+                </CardContent>
+              </Card>
+              
+              {/* Future Planning Section */}
+              <Card className="bg-white shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-bold flex items-center gap-2">
+                    <Calendar size={24} className="text-primary" /> भविष्यातील सामान्य नियोजन:
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-lg">एखाद्या समाजामध्ये राहत असलेल्या सदस्यांची संख्या त्या समाजाची ताकद ठरू शकते. परंतु हे तेव्हाच शक्य होईल जेव्हा तो समाज आणि त्यामध्ये राहत असलेल्या प्रत्येक व्यक्ती आणि सदस्यांमध्ये एकीची भावना असेल. महाराष्ट्रातील मराठा समाजाच्या संख्येबद्दल सर्वजण अवगत आहेतच, पण एवढी मोठी संख्या असून सुद्धा मराठा समाजामध्ये एकीच्या भावनेची उणीव कायम भासत राहते.</p>
+                  
+                  <p className="text-gray-600 text-lg mt-4">सकल मराठा परिवारामध्ये सहभागी होणाऱ्या सदस्यांपैकी बहुतांश लोक सामान्य मध्यमवर्गीय किंवा गरीब कुटुंबातील आहेत. श्रीमंत वर्गातील मराठा बांधवांची आपल्या सोबत येण्याची इच्छा असून सुद्धा त्यांच्या वैयक्तिक राजकीय, सामाजिक किंवा पारिवारिक महत्त्वकांक्षा जपण्यासाठी ते प्रत्यक्षपणे आपला सहभाग दर्शवू शकत नाही.</p>
+                </CardContent>
+              </Card>
+              
+              {/* Financial Overview Section */}
+              <Card className="bg-white shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-bold flex items-center gap-2">
+                    <ChartBar size={24} className="text-primary" /> आर्थिक विहंगावलोकन:
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-lg">संस्थेच्या कार्यक्रमांचा वाढता व्याप लक्षात घेता, आर्थिक नियोजनाचे महत्व अधोरेखित होते. सकल मराठा परिवारच्या उपक्रमांसाठी निधी संकलन करण्याच्या वेगवेगळ्या मार्गांची आम्ही सातत्याने शोध घेत आहोत. स्वयंसेवकांच्या कार्याबरोबरच, आर्थिक साहाय्य हे देखील महत्त्वाचे आहे.</p>
+                  
+                  <p className="text-gray-600 text-lg mt-4">आमच्या प्रत्येक कार्यक्रमासाठी पारदर्शक आर्थिक आराखडा तयार केला जातो आणि त्याचे मूल्यांकन केले जाते. आमच्या दानदात्यांना, त्यांच्या दानाचा उपयोग कशासाठी केला जातो याची माहिती मिळावी यासाठी आम्ही सातत्याने प्रयत्नशील आहोत.</p>
+                </CardContent>
+              </Card>
+              
+              {/* Social Media Section */}
+              <Card className="bg-white shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-bold flex items-center gap-2">
+                    <Users size={24} className="text-primary" /> सोशल मीडिया आणि ऑनलाइन उपस्थिती:
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-lg">आधुनिक युगात संवाद आणि जागरुकता वाढविण्यासाठी सोशल मीडिया एक महत्त्वपूर्ण माध्यम बनले आहे. सकल मराठा परिवार फेसबुक, इन्स्टाग्राम, ट्विटर आणि व्हाट्सएप यासारख्या विविध सोशल मीडिया प्लॅटफॉर्मवर सक्रिय आहे.</p>
+                  
+                  <p className="text-gray-600 text-lg mt-4">आमच्या ऑनलाइन उपस्थितीमुळे आम्हाला अधिक लोकांपर्यंत पोहोचण्यास मदत होते आणि आमच्या उपक्रमांबद्दल जागरूकता वाढविण्यास मदत होते. आमच्या सोशल मीडिया हँडल्सचा वापर करून आपण आमच्या कार्यक्रमांविषयी अपडेट मिळवू शकता आणि आमच्याशी संवाद साधू शकता.</p>
+                  
+                  <div className="flex flex-wrap gap-4 mt-6">
+                    <Button variant="outline" className="flex items-center gap-2 border-blue-500 text-blue-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                      Facebook
+                    </Button>
+                    <Button variant="outline" className="flex items-center gap-2 border-pink-500 text-pink-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                      Instagram
+                    </Button>
+                    <Button variant="outline" className="flex items-center gap-2 border-blue-400 text-blue-400">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                      Twitter
+                    </Button>
+                    <Button variant="outline" className="flex items-center gap-2 border-green-500 text-green-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                      WhatsApp
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </div>
@@ -116,15 +174,7 @@ const AboutUs = () => {
 
               {/* Timeline items */}
               <div className="space-y-16">
-                
-
-                
-
-                
-
-                
-
-                
+                {/* Timeline items would go here */}
               </div>
             </div>
           </div>
@@ -190,9 +240,21 @@ const AboutUs = () => {
 
               <form onSubmit={handleDonationSubmit} className="space-y-6">
                 <div>
-                  
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-                    {presetAmounts.map(amount => {})}
+                    {presetAmounts.map(amount => (
+                      <button
+                        key={amount}
+                        type="button"
+                        className={`py-2 px-4 rounded-md border ${
+                          donationAmount === amount && !customAmount
+                            ? 'bg-primary text-white'
+                            : 'bg-white text-gray-800 hover:bg-gray-100'
+                        }`}
+                        onClick={() => selectAmount(amount)}
+                      >
+                        ${amount}
+                      </button>
+                    ))}
                   </div>
                 </div>
 
@@ -201,13 +263,23 @@ const AboutUs = () => {
                     Or enter a custom amount
                   </Label>
                   <div className="flex items-center">
-                    
-                    
+                    <span className="bg-gray-200 py-2 px-4 rounded-l-md">$</span>
+                    <Input
+                      id="custom-amount"
+                      type="number"
+                      min="1"
+                      placeholder="Custom amount"
+                      value={customAmount}
+                      onChange={handleCustomAmountChange}
+                      className="rounded-l-none"
+                    />
                   </div>
                 </div>
 
                 <div className="pt-6">
-                  
+                  <Button type="submit" className="w-full py-6 text-lg">
+                    Donate Now
+                  </Button>
                 </div>
               </form>
             </div>
