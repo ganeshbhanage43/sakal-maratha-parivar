@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -142,26 +141,33 @@ const AboutUs = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 text-lg">आधुनिक युगात संवाद आणि जागरुकता वाढविण्यासाठी सोशल मीडिया एक महत्त्वपूर्ण माध्यम बनले आहे. सकल मराठा परिवार फेसबुक, इन्स्टाग्राम, ट्विटर आणि व्हाट्सएप यासारख्या विविध सोशल मीडिया प्लॅटफॉर्मवर सक्रिय आहे.</p>
+                  <p className="text-gray-600 text-lg">आधुनिक युगात संवाद आणि जागरुकता वाढविण्यासाठी सोशल मीडिया एक महत्त्वपूर्ण माध्यम बनले आहे. सकल मराठा परिवार फेसबुक, इन्स्टाग्राम, आणि व्हाट्सएप यासारख्या विविध सोशल मीडिया प्लॅटफॉर्मवर सक्रिय आहे.</p>
                   
                   <p className="text-gray-600 text-lg mt-4">आमच्या ऑनलाइन उपस्थितीमुळे आम्हाला अधिक लोकांपर्यंत पोहोचण्यास मदत होते आणि आमच्या उपक्रमांबद्दल जागरूकता वाढविण्यास मदत होते. आमच्या सोशल मीडिया हँडल्सचा वापर करून आपण आमच्या कार्यक्रमांविषयी अपडेट मिळवू शकता आणि आमच्याशी संवाद साधू शकता.</p>
                   
                   <div className="flex flex-wrap gap-4 mt-6">
-                    <Button variant="outline" className="flex items-center gap-2 border-blue-500 text-blue-500">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                      Facebook
+                    <Button variant="outline" asChild className="flex items-center gap-2 border-blue-500 text-blue-500">
+                      <a href="https://www.facebook.com/groups/730673071981150/?ref=share" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        Facebook
+                      </a>
                     </Button>
-                    <Button variant="outline" className="flex items-center gap-2 border-pink-500 text-pink-500">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
-                      Instagram
+                    <Button variant="outline" asChild className="flex items-center gap-2 border-pink-500 text-pink-500">
+                      <a href="https://www.instagram.com/sakal_maratha_pariwar_npo?igsh=MWdrcWZzb3pkOG5pbg==" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                        Instagram
+                      </a>
                     </Button>
-                    <Button variant="outline" className="flex items-center gap-2 border-blue-400 text-blue-400">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
-                      Twitter
-                    </Button>
-                    <Button variant="outline" className="flex items-center gap-2 border-green-500 text-green-500">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-                      WhatsApp
+                    <Button variant="outline" asChild className="flex items-center gap-2 border-green-500 text-green-500">
+                      <a href="https://whatsapp.com/channel/0029Vau2WbNJf05Ycu7UAI2r" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                          <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                          <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                          <path d="M12 17a5 5 0 0 1-5-5v-1a5 5 0 0 1 10 0v1a5 5 0 0 1-5 5Z" />
+                        </svg>
+                        WhatsApp
+                      </a>
                     </Button>
                   </div>
                 </CardContent>
@@ -308,4 +314,5 @@ const AboutUs = () => {
       <Footer />
     </div>;
 };
+
 export default AboutUs;

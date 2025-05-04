@@ -1,7 +1,9 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Calendar, ArrowRight, MapPin, Clock } from 'lucide-react';
+
 interface EventCardProps {
   image: string;
   title: string;
@@ -10,6 +12,7 @@ interface EventCardProps {
   location: string;
   link: string;
 }
+
 const EventCard: React.FC<EventCardProps> = ({
   image,
   title,
@@ -47,6 +50,7 @@ const EventCard: React.FC<EventCardProps> = ({
       </div>
     </div>;
 };
+
 const Events: React.FC = () => {
   const events = [{
     image: "https://images.unsplash.com/photo-1582213782179-e0d4d3cce817?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
@@ -70,6 +74,27 @@ const Events: React.FC = () => {
     location: "Community Center",
     link: "/events/leadership-workshop"
   }];
-  return;
+
+  return (
+    <section className="section-padding bg-gray-50">
+      <div className="container-custom">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            आगामी <span className="text-primary">कार्यक्रम</span>
+          </h2>
+          <p className="text-gray-600 max-w-3xl mx-auto">
+            आमच्या आगामी कार्यक्रमांमध्ये सहभागी व्हा आणि समाजाप्रति आपले योगदान द्या.
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {events.map((event, index) => (
+            <EventCard key={index} {...event} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
+
 export default Events;

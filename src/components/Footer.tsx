@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Mail, MapPin, Clock } from 'lucide-react';
+import { Facebook, Instagram, Mail, MapPin, Clock } from 'lucide-react';
+
 const Footer: React.FC = () => {
   return <footer className="bg-gray-900 text-white">
       <div className="container-custom py-16">
@@ -13,14 +15,19 @@ const Footer: React.FC = () => {
             </div>
             <p className="text-gray-300 mb-6">मराठ्यांनी मिळून मराठ्यांच्या प्रगतीला हातभार लावूया आणि मराठा विकासाचे उद्दिष्ट प्राप्त करूया.</p>
             <div className="flex space-x-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/groups/730673071981150/?ref=share" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/sakal_maratha_pariwar_npo?igsh=MWdrcWZzb3pkOG5pbg==" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                
+              <a href="https://whatsapp.com/channel/0029Vau2WbNJf05Ycu7UAI2r" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                  <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                  <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                  <path d="M12 17a5 5 0 0 1-5-5v-1a5 5 0 0 1 10 0v1a5 5 0 0 1-5 5Z" />
+                </svg>
               </a>
             </div>
           </div>
@@ -36,13 +43,7 @@ const Footer: React.FC = () => {
                 <Link to="/services" className="text-gray-300 hover:text-primary transition-colors">संस्थेचे सेवाकार्य</Link>
               </li>
               <li>
-                
-              </li>
-              <li>
                 <Link to="/join" className="text-gray-300 hover:text-primary transition-colors">सामील व्हा</Link>
-              </li>
-              <li>
-                
               </li>
               <li>
                 <Link to="/contact" className="text-gray-300 hover:text-primary transition-colors">संपर्क</Link>
@@ -79,8 +80,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="text-primary flex-shrink-0" />
-                <a href="mailto:info@empowerngo.org" className="text-gray-300 hover:text-primary transition-colors">sakalmarathaparivar.96
-@gmail.com</a>
+                <a href="mailto:sakalmarathaparivar.96@gmail.com" className="text-gray-300 hover:text-primary transition-colors">sakalmarathaparivar.96@gmail.com</a>
               </li>
               <li className="flex items-center space-x-3">
                 <Clock size={20} className="text-primary flex-shrink-0" />
@@ -99,4 +99,5 @@ const Footer: React.FC = () => {
       </div>
     </footer>;
 };
+
 export default Footer;
