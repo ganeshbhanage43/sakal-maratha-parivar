@@ -25,7 +25,7 @@ export const servicesData: ServiceData[] = [
     id: "education",
     title: "शिक्षण क्षेत्र",
     icon: BookOpen,
-    shortDescription: "महाराष्ट्र सरकार स्थापित स्वायत्त संस्था म्हणून सारथी संस्थेकडून शैक्षणिक क्षेत्रात जे उपक्रम राबविले जातात, ते सर्व उपक्रम तळागाळातील मराठा विद्यार्थ्यांपर्यंत पोहोचविण्याचे काम SMP प्रतिनिधी यांच्याकडून केले जाते.\n\nयामध्ये प्रामुख्याने खालील महत्त्वाचे उपक्रम मोठया प्रमाणात राबविण्याचा प्रयत्न केला जातो:\n\nस्पर्धा परीक्षा क्लासेस (MPSC/UPSC/Banking/SSC)\nDefence exam मार्गदर्शन कार्यक्रम (NDA, Navy, इत्यादी)\nविविध प्रकारच्या शाळा, कॉलेज व पी.एच.डी. स्तरावरील शिष्यवृत्ती योजना \nपरदेशी शिक्षण शिष्यवृत्ती योजना \nमराठा तरुण कौशल्य विकास कार्यक्रम",
+    shortDescription: "महाराष्ट्र सरकार स्थापित स्वायत्त संस्था म्हणून सारथी संस्थेकडून शैक्षणिक क्षेत्रात जे उपक्रम राबविले जातात, ते सर्व उपक्रम तळागाळातील मराठा विद्यार्थ्यांपर्यंत पोहोचविण्याचे काम SMP प्रतिनिधी यांच्याकडून केले जाते.\n\nयामध्ये प्रामुख्याने खालील महत्त्वाचे उपक्रम मोठया प्रमाणात राबविण्याचा प्रयत्न केला जातो:\n\n• स्पर्धा परीक्षा क्लासेस (MPSC/UPSC/Banking/SSC)\n• Defence exam मार्गदर्शन कार्यक्रम (NDA, Navy, इत्यादी)\n• विविध प्रकारच्या शाळा, कॉलेज व पी.एच.डी. स्तरावरील शिष्यवृत्ती योजना\n• परदेशी शिक्षण शिष्यवृत्ती योजना\n• मराठा तरुण कौशल्य विकास कार्यक्रम",
     fullDescription: "Our education support program aims to break the cycle of poverty through quality education. We work with underprivileged communities to provide access to educational resources, qualified mentors, and scholarship opportunities. Our approach is holistic, addressing not just academic needs but also providing emotional support and life skills training.",
     benefits: [
       "Access to quality learning materials and resources",
