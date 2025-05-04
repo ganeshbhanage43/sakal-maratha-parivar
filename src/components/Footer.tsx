@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
                 <Instagram size={20} />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                <Twitter size={20} />
+                
               </a>
             </div>
           </div>
