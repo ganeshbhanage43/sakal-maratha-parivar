@@ -1,14 +1,11 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { servicesData } from '@/data/servicesData';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-
 const Services = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow pt-20">
         {/* Header Section */}
@@ -27,13 +24,11 @@ const Services = () => {
           <div className="container-custom">
             <div className="grid md:grid-cols-2 gap-10">
               {servicesData.map((service, index) => {
-                const Icon = service.icon;
-                return (
-                  <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
-                    <div 
-                      className="h-48 bg-cover bg-center"
-                      style={{ backgroundImage: `url(${service.image})` }}
-                    ></div>
+              const Icon = service.icon;
+              return <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <div className="h-48 bg-cover bg-center" style={{
+                  backgroundImage: `url(${service.image})`
+                }}></div>
                     <div className="p-8 flex-grow">
                       <div className="flex items-center mb-4">
                         <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mr-4">
@@ -45,12 +40,11 @@ const Services = () => {
                         {service.shortDescription}
                       </p>
                       <Button asChild className="mt-auto">
-                        <Link to={`/services/${service.id}`}>Learn More</Link>
+                        
                       </Button>
                     </div>
-                  </div>
-                );
-              })}
+                  </div>;
+            })}
             </div>
           </div>
         </section>
@@ -66,8 +60,6 @@ const Services = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Services;
