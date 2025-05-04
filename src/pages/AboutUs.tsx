@@ -9,6 +9,7 @@ import { Slider } from '@/components/ui/slider';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Heart, Users, GraduationCap, Home, Briefcase, FileText, Calendar, ChartBar, Info } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
+
 const AboutUs = () => {
   const [donationAmount, setDonationAmount] = useState<number>(25);
   const [customAmount, setCustomAmount] = useState<string>('');
@@ -32,7 +33,6 @@ const AboutUs = () => {
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow pt-20">
-        {/* Introduction Section */}
         <section className="py-16 bg-white">
           <div className="container-custom">
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -54,7 +54,6 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* Our Story Timeline Section */}
         <section className="py-16 bg-gray-50">
           <div className="container-custom">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800">
@@ -69,9 +68,7 @@ const AboutUs = () => {
               </Card>
             </div>
 
-            {/* Additional Information Sections */}
             <div className="space-y-8 mt-12">
-              {/* Background Section */}
               <Card className="bg-white shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold flex items-center gap-2">
@@ -83,7 +80,6 @@ const AboutUs = () => {
                 </CardContent>
               </Card>
               
-              {/* Challenges Section */}
               <Card className="bg-white shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold flex items-center gap-2">
@@ -97,7 +93,6 @@ const AboutUs = () => {
                 </CardContent>
               </Card>
               
-              {/* Future Planning Section */}
               <Card className="bg-white shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold flex items-center gap-2">
@@ -105,13 +100,20 @@ const AboutUs = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 text-lg">एखाद्या समाजामध्ये राहत असलेल्या सदस्यांची संख्या त्या समाजाची ताकद ठरू शकते. परंतु हे तेव्हाच शक्य होईल जेव्हा तो समाज आणि त्यामध्ये राहत असलेल्या प्रत्येक व्यक्ती आणि सदस्यांमध्ये एकीची भावना असेल. महाराष्ट्रातील मराठा समाजाच्या संख्येबद्दल सर्वजण अवगत आहेतच, पण एवढी मोठी संख्या असून सुद्धा मराठा समाजामध्ये एकीच्या भावनेची उणीव कायम भासत राहते.</p>
+                  <p className="text-gray-600 text-lg">एखाद्या समाजामध्ये राहत असलेल्या सदस्यांची संख्या त्या समाजाची ताकद ठरू शकते. परंतु हे तेव्हाच शक्य होईल जेव्हा तो समाज आणि त्यामध्ये राहत असलेल्या प्रत्येक व्यक्ती आणि सदस्यांमध्ये एकीची भावना असेल. महाराष्ट्रातील मराठा समाजाच्या संख्येबद्दल सर्वजण अवगत आहेतच, पण एवढी मोठी संख्या असून सुद्धा मराठा समाजामध्ये एकीच्या भावनेची उणीव कायम भासत राहते. ही उणीव भासण्याचे एक महत्त्वाचे कारण म्हणजे मराठा समाजातील श्रीमंत आणि गरीब यांच्यामधील रुंदावत चाललेली दरी होय.</p>
                   
-                  <p className="text-gray-600 text-lg mt-4">सकल मराठा परिवारामध्ये सहभागी होणाऱ्या सदस्यांपैकी बहुतांश लोक सामान्य मध्यमवर्गीय किंवा गरीब कुटुंबातील आहेत. श्रीमंत वर्गातील मराठा बांधवांची आपल्या सोबत येण्याची इच्छा असून सुद्धा त्यांच्या वैयक्तिक राजकीय, सामाजिक किंवा पारिवारिक महत्त्वकांक्षा जपण्यासाठी ते प्रत्यक्षपणे आपला सहभाग दर्शवू शकत नाही.</p>
+                  <p className="text-gray-600 text-lg mt-4">सकल मराठा परिवारामध्ये सहभागी होणाऱ्या सदस्यांपैकी बहुतांश लोक सामान्य मध्यमवर्गीय किंवा गरीब कुटुंबातील आहेत. श्रीमंत वर्गातील मराठा बांधवांची आपल्या सोबत येण्याची इच्छा असून सुद्धा त्यांच्या वैयक्तिक राजकीय, सामाजिक किंवा पारिवारिक महत्त्वकांक्षा जपण्यासाठी ते प्रत्यक्षपणे आपला सहभाग दर्शवू शकत नाही. या सगळ्यांमध्ये एक सकारात्मक गोष्ट अशी, की सकल मराठा परिवारासोबत सधन वर्गातील मराठा समाज अप्रत्यक्षपणे जोडला गेलेला/जात आहे. सामान्य वर्गातील सदस्यांनी आपापल्या परीने संघटनेतील उपक्रमांमध्ये आपला वेळ देऊन जबाबदारी पार पाडण्याची गरज आहे.</p>
+                  
+                  <p className="text-gray-600 text-lg mt-4">आत्ताच्या परिस्थितीमध्ये संघटनेची सदस्य संख्या जास्तीत जास्त कशी वाढवता येईल, यावर लक्ष देणे गरजेचे आहे. सदस्य संख्या वाढवण्यासाठी प्रत्येकाने आपापल्या पातळीवर संघटनेच्या कार्यप्रणाली मध्ये नमूद केलेल्या विषयांना अनुसरून जे काही उपक्रम राबवता येतील, त्याद्वारे तालुका आणि गाव पातळीवरील मराठा बांधवांना आपल्या सोबत जोडण्याचा प्रयत्न केला पाहिजे.</p>
+                  
+                  <p className="text-gray-600 text-lg mt-4">सुरुवातीच्या काळात संघटन मजबूत करण्यासाठी उपक्रम राबवताना समाजाच्या भावनांचा विचार करून नियोजन केले पाहिजे. उदाहरणार्थ पुणे, सातारा, कोल्हापूर, इत्यादी अशा जिल्ह्यांमध्ये गड किल्ले हा प्रत्येकासाठी जिव्हाळ्याचा विषय आहे. या जिल्ह्यातील सकल मराठा परिवार प्रतिनिधी यांनी गड किल्ले संबंधित उपक्रम राबवले पाहिजेत. जेणेकरून जास्तीत जास्त बांधव अशा उपक्रमांमध्ये आपला सहभाग नोंदवतील आणि सोबतच संघटन गावागावात पोहोचण्यास मदत होईल.</p>
+                  
+                  <p className="text-gray-600 text-lg mt-4">अशा प्रकारे इतर जिल्ह्यातील प्रतिनिधी आणि सदस्यांनी आपापल्या जिल्हा किंवा तालुका पातळीवर विचार करून वर नमूद केल्याप्रमाणे भावनात्मक उपक्रम राबवण्याचा प्रयत्न केला पाहिजे. ज्यावेळी संघटन गाव पातळीपर्यंत पोहोचून मजबूत होईल, त्यानंतर प्रत्येकाने ठराविक रित्या फक्त आणि फक्त मराठा बांधवांचा फायदा करून देणारे उपक्रम राबवता येतील.</p>
+                  
+                  <p className="text-gray-600 text-lg mt-4">असे उपक्रम राबवत असताना कोणत्या वर्षी काय उपक्रम राबवावेत हे ठरवण्यासाठी संघटनेचे एक, तीन आणि दहा वर्षांपर्यंतचे वेगवेगळे टारगेट/ ध्येय डोळ्यासमोर ठेवणे महत्त्वाचे आहे.</p>
                 </CardContent>
               </Card>
               
-              {/* Financial Overview Section */}
               <Card className="bg-white shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold flex items-center gap-2">
@@ -119,19 +121,16 @@ const AboutUs = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 text-lg">सकल मराठा परिवार संघटना कुठल्याही प्रकारच्या आर्थिक व्यवहारांमध्ये सहभाग घेत नाही. तसेच एखाद्या बांधवाच्या मेडिकल इमर्जन्सी मध्ये हॉस्पिटल साठी येणाऱ्या खर्चामध्ये मदत म्हणून पोस्ट केव्हा मेसेजेस अप्रूव करत नाही. 
+                  <p className="text-gray-600 text-lg">सकल मराठा परिवार संघटना कुठल्याही प्रकारच्या आर्थिक व्यवहारांमध्ये सहभाग घेत नाही. तसेच एखाद्या बांधवाच्या मेडिकल इमर्जन्सी मध्ये हॉस्पिटल साठी येणाऱ्या खर्चामध्ये मदत म्हणून पोस्ट केव्हा मेसेजेस अप्रूव करत नाही. 
 
 
-सकल मराठा परिवार च्या माध्यमातून कुठल्याही प्रकारचे प्रॉडक्ट्स किंवा उत्पादने यांची विक्री केली जात नाही. 
+सकल मराठा परिवार च्या माध्यमातून कुठल्याही प्रकारचे प्रॉडक्ट्स किंवा उत्पादने यांची विक्री केली जात नाही. 
 
 
 ज्यावेळी एखादा खर्चिक उपक्रम घ्यायचे ठरवले जाते, तेव्हा आपल्याच परिवारातील काही मराठा उद्योजक यांच्याकडून त्या उपक्रमासाठी स्पॉन्सरशिप घेतली जाते आणि अशा उपक्रमांचे नियोजन लोकल लेवलला (जिल्हा किंवा तालुका पातळीवर) केल्यामुळे त्यामध्ये पारदर्शीता ठेवणे सोपे जाते. यासोबतच स्पॉन्सरशिप दिलेल्या मराठा उद्योजकांची व्यावसायिक जाहिरात होऊन त्यांना सुद्धा हातभार लावला जातो.</p>
-                  
-                  
                 </CardContent>
               </Card>
               
-              {/* Social Media Section */}
               <Card className="bg-white shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold flex items-center gap-2">
@@ -173,20 +172,15 @@ const AboutUs = () => {
             </div>
 
             <div className="relative">
-              {/* Vertical line */}
               <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-primary"></div>
 
-              {/* Timeline items */}
               <div className="space-y-16">
-                {/* Timeline items would go here */}
               </div>
             </div>
           </div>
         </section>
 
-        {/* Impact Highlights Section */}
         <section className="py-16 bg-gradient-to-r from-primary to-blue-700 text-white relative overflow-hidden">
-          {/* Background overlay */}
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style={{
           backgroundImage: "url('https://images.unsplash.com/photo-1582213782179-e0d4d3cce817?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"
         }}></div>
@@ -233,7 +227,6 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* Donation Section */}
         <section className="py-16 bg-white">
           <div className="container-custom max-w-4xl">
             <div className="bg-gray-50 rounded-lg p-8 shadow-lg">
@@ -271,7 +264,6 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* Call to Action Section */}
         <section className="py-16 bg-secondary text-white">
           <div className="container-custom text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">सामील व्हा

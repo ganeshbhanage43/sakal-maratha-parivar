@@ -1,7 +1,9 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+
 const About: React.FC = () => {
   return <section className="section-padding bg-white">
       <div className="container-custom">
@@ -30,4 +32,5 @@ const About: React.FC = () => {
       </div>
     </section>;
 };
+
 export default About;
