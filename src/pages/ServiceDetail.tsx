@@ -35,6 +35,9 @@ const ServiceDetail: React.FC = () => {
   }
 
   const Icon = service.icon;
+  
+  // Check if this is one of the key services we're focusing on
+  const isKeyService = ['business', 'employment', 'healthcare', 'education'].includes(serviceId || '');
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -56,23 +59,29 @@ const ServiceDetail: React.FC = () => {
         </div>
         
         {/* Details Section */}
-        <section className="py-16 bg-white">
+        <section className={`py-16 ${isKeyService ? 'bg-white' : 'bg-white'}`}>
           <div className="container-custom">
             <div className="grid md:grid-cols-2 gap-12 items-start">
               {/* Left Column - Description */}
               <div>
-                <h2 className="text-3xl font-bold mb-6">About this Service</h2>
-                <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                  {service.fullDescription}
-                </p>
+                <h2 className="text-3xl font-bold mb-6">
+                  {isKeyService ? `${service.title} माहिती` : "About this Service"}
+                </h2>
+                <div className="text-gray-700 text-lg leading-relaxed mb-8 whitespace-pre-line">
+                  {isKeyService ? service.shortDescription : service.fullDescription}
+                </div>
                 <Button asChild size="lg" className="text-lg px-8 py-6">
-                  <a href={service.ctaLink}>{service.ctaText}</a>
+                  <a href={service.ctaLink}>
+                    {isKeyService ? "अधिक माहितीसाठी संपर्क करा" : service.ctaText}
+                  </a>
                 </Button>
               </div>
               
               {/* Right Column - Benefits */}
               <div className="bg-gray-50 p-8 rounded-lg shadow-md">
-                <h3 className="text-2xl font-bold mb-6">Key Benefits</h3>
+                <h3 className="text-2xl font-bold mb-6">
+                  {isKeyService ? "प्रमुख फायदे" : "Key Benefits"}
+                </h3>
                 <ul className="space-y-4">
                   {service.benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start">
@@ -88,10 +97,93 @@ const ServiceDetail: React.FC = () => {
           </div>
         </section>
         
+        {/* Additional Information Section for Key Services */}
+        {isKeyService && (
+          <section className="py-16 bg-gray-50">
+            <div className="container-custom">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl font-bold mb-8 text-center">
+                  {serviceId === 'business' && "व्यवसाय विकास कार्यक्रम"}
+                  {serviceId === 'employment' && "रोजगार संधी आणि कौशल्य विकास"}
+                  {serviceId === 'healthcare' && "आरोग्य सेवा उपक्रम"}
+                  {serviceId === 'education' && "शैक्षणिक उपक्रम"}
+                </h2>
+                
+                {/* Custom content for key services */}
+                <div className="bg-white p-8 rounded-lg shadow-md">
+                  {serviceId === 'business' && (
+                    <div className="space-y-6">
+                      <h3 className="text-xl font-semibold">अण्णासाहेब पाटील आर्थिक विकास महामंडळ कर्ज योजना</h3>
+                      <p className="text-gray-700">मराठा उद्योजकांना आणि नवउद्योजकांना कमी व्याज दरात कर्ज देऊन त्यांच्या व्यवसाय प्रगतीस मदत करणे.</p>
+                      
+                      <h3 className="text-xl font-semibold">तालुका स्तरीय व्यवसाय मार्गदर्शन</h3>
+                      <p className="text-gray-700">प्रत्येक तालुका स्तरावर 300+ प्रतिनिधींचे नेटवर्क व्यवसायिकांना मार्गदर्शन करण्यासाठी.</p>
+                      
+                      <h3 className="text-xl font-semibold">व्यवसाय मेळावे</h3>
+                      <p className="text-gray-700">जिल्हा स्तरावर व्यवसाय मेळावे आयोजित करून नेटवर्किंग आणि व्यावसायिक संधींची निर्मिती.</p>
+                    </div>
+                  )}
+                  
+                  {serviceId === 'employment' && (
+                    <div className="space-y-6">
+                      <h3 className="text-xl font-semibold">नोकरी संधींची माहिती</h3>
+                      <p className="text-gray-700">विविध नोकरी संधींची माहिती PDF स्वरूपात संकलित करून समाजातील तरुणांपर्यंत पोहोचवणे.</p>
+                      
+                      <h3 className="text-xl font-semibold">कौशल्य विकास प्रशिक्षण</h3>
+                      <p className="text-gray-700">केंद्र आणि राज्य सरकारच्या कौशल्य विकास योजनांचा लाभ समाजातील तरुणांपर्यंत पोहोचवणे.</p>
+                      
+                      <h3 className="text-xl font-semibold">ऑनलाईन मार्गदर्शन सत्रे</h3>
+                      <p className="text-gray-700">Facebook आणि YouTube च्या माध्यमातून तज्ञांकडून नोकरी संदर्भात मार्गदर्शन.</p>
+                    </div>
+                  )}
+                  
+                  {serviceId === 'healthcare' && (
+                    <div className="space-y-6">
+                      <h3 className="text-xl font-semibold">रक्तदान शिबिरे</h3>
+                      <p className="text-gray-700">जिल्हा आणि तालुका स्तरावर नियमित रक्तदान शिबिरांचे आयोजन.</p>
+                      
+                      <h3 className="text-xl font-semibold">वैद्यकीय शिबिरे</h3>
+                      <p className="text-gray-700">वृद्धांसाठी आरोग्य शिबिरे, दिव्यांग बांधवांना कृत्रिम अवयव उपलब्ध करून देणे.</p>
+                      
+                      <h3 className="text-xl font-semibold">आपत्कालीन आरोग्य सहाय्य</h3>
+                      <p className="text-gray-700">कोविड काळात केलेल्या मदतीप्रमाणेच इतर आपत्कालीन परिस्थितीतही वैद्यकीय मदत उपलब्ध करणे.</p>
+                    </div>
+                  )}
+                  
+                  {serviceId === 'education' && (
+                    <div className="space-y-6">
+                      <h3 className="text-xl font-semibold">स्पर्धा परीक्षा वर्ग</h3>
+                      <p className="text-gray-700">MPSC/UPSC/बँकिंग/SSC परीक्षांसाठी विशेष मार्गदर्शन.</p>
+                      
+                      <h3 className="text-xl font-semibold">संरक्षण क्षेत्र परीक्षा मार्गदर्शन</h3>
+                      <p className="text-gray-700">NDA, नेव्ही आणि इतर संरक्षण दलांच्या परीक्षांसाठी मार्गदर्शन.</p>
+                      
+                      <h3 className="text-xl font-semibold">शिष्यवृत्ती योजना</h3>
+                      <p className="text-gray-700">विद्यार्थ्यांसाठी विविध शिष्यवृत्ती योजनांची माहिती व मार्गदर्शन.</p>
+                      
+                      <h3 className="text-xl font-semibold">परदेशी शिक्षण</h3>
+                      <p className="text-gray-700">परदेशी शिक्षणासाठी इच्छुक विद्यार्थ्यांना मार्गदर्शन व शिष्यवृत्तीची माहिती.</p>
+                    </div>
+                  )}
+                </div>
+                
+                {/* Contact action */}
+                <div className="text-center mt-10">
+                  <Button asChild variant="outline" size="lg">
+                    <a href="/contact">संपर्क करा</a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+        
         {/* Testimonials */}
-        <section className="py-16 bg-gray-50">
+        <section className={`py-16 ${isKeyService ? 'bg-white' : 'bg-gray-50'}`}>
           <div className="container-custom">
-            <h2 className="text-3xl font-bold mb-10 text-center">Success Stories</h2>
+            <h2 className="text-3xl font-bold mb-10 text-center">
+              {isKeyService ? "लाभार्थींचे अनुभव" : "Success Stories"}
+            </h2>
             
             <div className="relative">
               <Carousel className="mx-auto max-w-5xl">
@@ -130,7 +222,7 @@ const ServiceDetail: React.FC = () => {
             
             <div className="text-center mt-12">
               <Button asChild variant="outline" size="lg">
-                <a href="/contact">Contact Us For More Information</a>
+                <a href="/contact">अधिक माहितीसाठी संपर्क करा</a>
               </Button>
             </div>
           </div>
