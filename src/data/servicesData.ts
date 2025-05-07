@@ -1,4 +1,4 @@
-import { BookOpen, Heart, Briefcase, Home, Store } from 'lucide-react';
+import { BookOpen, Heart, Briefcase, Home, Store, Bell } from 'lucide-react';
 
 export interface Testimonial {
   name: string;
@@ -170,6 +170,44 @@ export const servicesData: ServiceData[] = [
         quote: "व्यवसाय मेळाव्यामध्ये सहभागी होऊन मला अनेक नवीन संधी आणि संपर्क मिळाले. आता माझा व्यवसाय स्थानिक पातळीवरून राज्य पातळीवर पोहोचला आहे.",
         role: "व्यवसायिक",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+      }
+    ]
+  },
+  {
+    id: "emergency",
+    title: "आपत्कालीन मदत",
+    icon: Bell,
+    shortDescription: "अहमदनगर, नाशिक आणि पुणे जिल्ह्यात सकल मराठा परिवाराच्या माध्यमातून कोरोना काळात रुग्��ांच्या नातेवाईकांना मोफत २ वेळचे जेवण पुरविण्यात आले होते. सोबतच समाजातील गरजू बांधवांना किराणा साहित्याचे किट बनवून वाटण्यात आले होते. \n\nसातारा-सांगली आणि रायगड-रत्नागिरी जिल्ह्यांमध्ये २०२१-२२ दरम्यान आलेल्या पूर परिस्थिती मध्ये सकल मराठा परिवार टीम कडून संपूर्ण महाराष्ट्र भरातून मदत गोळा करण्यात आली आणि निवडक प्रतिनिधी कडून ते सर्व साहित्य पूरग्रस्तांना पोहोचविण्यात आले. \n\nयासोबतच रत्नागिरी जिल्ह्यातील काही गावांमध्ये आरोग्य शिबिरांचे आयोजन करण्यात आले.",
+    fullDescription: "Our emergency response program rapidly mobilizes resources during crises such as natural disasters, pandemics, or other emergencies. We provide immediate relief through food distribution, temporary shelter, medical aid, and emotional support. Our volunteers are trained to respond quickly and effectively to help communities recover from unexpected challenges.",
+    benefits: [
+      "Rapid emergency response during crises",
+      "Food and essential supplies distribution",
+      "Temporary shelter arrangements",
+      "Medical aid in emergency situations",
+      "Coordination with local authorities and services",
+      "Post-disaster rehabilitation support"
+    ],
+    image: "https://images.unsplash.com/photo-1603827457577-609e6f42a45e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80",
+    ctaText: "अधिक माहिती",
+    ctaLink: "/contact?service=emergency",
+    testimonials: [
+      {
+        name: "सुनील पवार",
+        quote: "कोरोना काळात माझ्या आईचा उपचार सुरू होता आणि मी एकटा होतो. सकल मराठा परिवारने मला दररोज दोन वेळचे जेवण पुरवून मोठी मदत केली.",
+        role: "लाभार्थी",
+        image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+      },
+      {
+        name: "अनिता शिंदे",
+        quote: "२०२१ मधील पुरामध्ये आमच्या गावातील बरेच लोक बेघर झाले होते. सकल मराठा परिवारच्या कार्यकर्त्यांनी आम्हाला अन्नधान्य, कपडे आणि इतर आवश्यक वस्तू पुरवल्या.",
+        role: "पूरग्रस्त",
+        image: "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+      },
+      {
+        name: "दत्तात्रय गायकवाड",
+        quote: "रत्नागिरी जिल्ह्यात झालेल्या आरोग्य शिबिरामुळे मला माझ्या आजाराची माहिती मिळाली आणि वेळीच उपचार सुरू क���ता आले. या उपक्रमाबद्दल मी संस्थेचा आभारी आहे.",
+        role: "ग्रामस्थ",
+        image: "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80"
       }
     ]
   },

@@ -39,7 +39,7 @@ const Services: React.FC = () => {
           <p className="text-gray-600 text-lg">सकल मराठा परिवार ही संस्था मराठा समाजाच्या शैक्षणिक, व्यवसायिक, नोकरी, आर्थिक आणि वैद्यकीय प्रगतीसाठी कार्यरत आहे. समाजातील प्रत्येक घटकाला मदतीचा हात देण्याचा आमचा संकल्प आहे.</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8">
           {servicesData.map((service, index) => {
           const Icon = service.icon;
           return <ServiceCard key={index} icon={<Icon size={32} />} title={service.title} description={service.shortDescription} link={`/services/${service.id}`} />;
@@ -50,3 +50,4 @@ const Services: React.FC = () => {
 };
 
 export default Services;
+
