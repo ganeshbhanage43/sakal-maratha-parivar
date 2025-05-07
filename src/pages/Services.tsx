@@ -1,11 +1,9 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { servicesData } from '@/data/servicesData';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-
 const Services = () => {
   return <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -42,7 +40,7 @@ const Services = () => {
                         {service.shortDescription}
                       </div>
                       <Button asChild className="mt-auto">
-                        <Link to={`/services/${service.id}`}>{service.ctaText}</Link>
+                        
                       </Button>
                     </div>
                   </div>;
