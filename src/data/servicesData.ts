@@ -1,3 +1,4 @@
+
 import { BookOpen, Heart, Briefcase, Home } from 'lucide-react';
 
 export interface Testimonial {
@@ -63,7 +64,7 @@ export const servicesData: ServiceData[] = [
     id: "healthcare",
     title: "आरोग्य क्षेत्र",
     icon: Heart,
-    shortDescription: "सकल मराठा परिवार टीम मेडिकल क्षेत्रामध्ये ���ेल्या 4 वर्षांपासून कार्यरत आहे. यामध्ये जिल्हा आणि तालुका स्तरावर घेतली जाणारी रक्तदान शिबीरे, वृद्धांसाठी आरोग्य शिबीरे (BP, डोळ्यांचे आजार व इतर मार्गदर्शन), दिव्यांग बांधवांना कृत्रिम अवयव उपलब्ध करून देणे, महाराष्ट्र च्या काना-कोपऱ्यात गोरगरीब लोकांचे ऑपेरेशन मोफत किंवा कमी खर्च मध्ये करून देणे, डिलीव्हरी केसेस, हॉस्पिटल चे बिल कमी करणे अशा अनेक गोष्टीमध्ये शक्य तेवढी (आर्थिक वगळता) मदत SMP टीम चे प्रतिनिधी करत असतात.",
+    shortDescription: "सकल मराठा परिवार टीम मेडिकल क्षेत्रामध्ये गेल्या 4 वर्षांपासून कार्यरत आहे. यामध्ये जिल्हा आणि तालुका स्तरावर घेतली जाणारी रक्तदान शिबीरे, वृद्धांसाठी आरोग्य शिबीरे (BP, डोळ्यांचे आजार व इतर मार्गदर्शन), दिव्यांग बांधवांना कृत्रिम अवयव उपलब्ध करून देणे, महाराष्ट्र च्या काना-कोपऱ्यात गोरगरीब लोकांचे ऑपेरेशन मोफत किंवा कमी खर्च मध्ये करून देणे, डिलीव्हरी केसेस, हॉस्पिटल चे बिल कमी करणे अशा अनेक गोष्टीमध्ये शक्य तेवढी (आर्थिक वगळता) मदत SMP टीम चे प्रतिनिधी करत असतात.\n\nCovid काळात पेशंटना बेड उपलब्ध करून देणे, औषधी/इंजेक्शन्स उपलब्ध करून देण्यात मदत करणे, ब्लड/प्लाझ्मा उपलब्ध करून देणे, मानसिक आधार, रुग्णांच्या नातेवाईकांना मोफत जेवण पुरवणे इत्यादी प्रकारची कामे SMP प्रतिनिधी कडून करण्यात आलेली आहेत.",
     fullDescription: "Access to healthcare is a fundamental right, yet many communities lack basic medical services. Our healthcare access program works to bridge this gap by connecting underserved populations with medical professionals, organizing health camps, providing preventive care education, and assisting with medical expenses for critical treatments.",
     benefits: [
       "Free health check-ups and screenings",
@@ -101,7 +102,7 @@ export const servicesData: ServiceData[] = [
     id: "employment",
     title: "नोकरी व रोजगार क्षेत्र",
     icon: Briefcase,
-    shortDescription: "समाजातील बेरोजगार मराठा तरुणांना नोकरी मिळावी या उद्देशाने नोकरीच्या संधी असलेल्या जाहिराती एका PDF मध्ये एकत्रित करून त्या सोशल मीडिया च्या माध्यामातून मराठा तरुणांपर्यंत पोहोचवल्या जातात. यासोबत वेळोवेळी कॉर्पोरेट आणि सरकारी क्षेत्रातील नोकरी संदर्भात आपण Facebook/YouTube सारख्या माध्यमांचा वापर करून तज्ञ व्यक्तींचे live विडिओ घेऊन मार्गदर्शन केले जाते.\nकेंद्र सरकार आणि महाराष्ट्र सरकार यांच्या कडून राबविल्या जाणार्‍या कौशल्य विकास कार्यक्रम अंतर्गत मराठा तरुणांना कौशल��य विकास आणि व्यक्तिगत विकासाच्या संधी उपलब्ध करून दिल्या जातात.",
+    shortDescription: "समाजातील बेरोजगार मराठा तरुणांना नोकरी मिळावी या उद्देशाने नोकरीच्या संधी असलेल्या जाहिराती एका PDF मध्ये एकत्रित करून त्या सोशल मीडिया च्या माध्यामातून मराठा तरुणांपर्यंत पोहोचवल्या जातात. यासोबत वेळोवेळी कॉर्पोरेट आणि सरकारी क्षेत्रातील नोकरी संदर्भात आपण Facebook/YouTube सारख्या माध्यमांचा वापर करून तज्ञ व्यक्तींचे live विडिओ घेऊन मार्गदर्शन केले जाते.\nकेंद्र सरकार आणि महाराष्ट्र सरकार यांच्या कडून राबविल्या जाणार्‍या कौशल्य विकास कार्यक्रम अंतर्गत मराठा तरुणांना कौशल्य विकास आणि व्यक्तिगत विकासाच्या संधी उपलब्ध करून दिल्या जातात.",
     fullDescription: "Economic independence is crucial for sustainable change. Our employment assistance program equips individuals with the skills, resources, and opportunities needed to secure stable employment. We provide comprehensive job training, help with resume preparation, conduct mock interviews, offer career counseling, and connect participants with potential employers.",
     benefits: [
       "Vocational training and skill development",
