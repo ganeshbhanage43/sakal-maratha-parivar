@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -22,7 +23,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         {icon}
       </div>
       <h3 className="text-xl font-bold mb-4">{title}</h3>
-      <p className="text-gray-600 mb-6">{description}</p>
+      <p className="text-gray-600 mb-6 whitespace-pre-line">{description}</p>
       <Button asChild variant="outline" className="group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-colors duration-300">
         <Link to={link}>अधिक माहितीसाठी</Link>
       </Button>
@@ -38,7 +39,7 @@ const Services: React.FC = () => {
           <p className="text-gray-600 text-lg">सकल मराठा परिवार ही संस्था मराठा समाजाच्या शैक्षणिक, व्यवसायिक, नोकरी, आर्थिक आणि वैद्यकीय प्रगतीसाठी कार्यरत आहे. समाजातील प्रत्येक घटकाला मदतीचा हात देण्याचा आमचा संकल्प आहे.</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {servicesData.map((service, index) => {
           const Icon = service.icon;
           return <ServiceCard key={index} icon={<Icon size={32} />} title={service.title} description={service.shortDescription} link={`/services/${service.id}`} />;

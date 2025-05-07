@@ -1,5 +1,4 @@
-
-import { BookOpen, Heart, Briefcase, Home } from 'lucide-react';
+import { BookOpen, Heart, Briefcase, Home, Store } from 'lucide-react';
 
 export interface Testimonial {
   name: string;
@@ -133,6 +132,44 @@ export const servicesData: ServiceData[] = [
         quote: "I never thought I could start my own business, but the entrepreneurship program gave me the knowledge and support I needed. My small business is now thriving and supporting my family.",
         role: "Entrepreneur",
         image: "https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=723&q=80"
+      }
+    ]
+  },
+  {
+    id: "business",
+    title: "व्यवसाय आणि उद्योग क्षेत्र",
+    icon: Store,
+    shortDescription: "सकल मराठा परिवार कडून संपूर्ण महाराष्ट्र मध्ये 300+ प्रत्येक तालुका स्तरावर तालुका प्रतिनिधी नेमून देण्यात आलेले आहेत. हे प्रतिनिधी अण्णासाहेब पाटील आर्थिक विकास महामंडळ कर्ज योजना च्या माध्यमातून मराठा उद्योजकांना त्यांच्या व्यवसाय वाढीसाठी आणि मराठा नवउद्योजकांना नवीन व्यवसाय उभारण्यासाठी मोफत मार्गदर्शन करत असतात. येणार्‍या काळात महाराष्ट्राच्या कानाकोपऱ्यातील प्रत्येक गावांत SMP प्रतिनिधी अण्णासाहेब पाटील आर्थिक विकास महामंडळ कर्ज योजनेच्या माध्यमातुन मराठा बांधवांना व्यावसायिक प्रगती संदर्भात मार्गदर्शन करण्यास कटिबद्ध असतील.\n\nयासोबतच येणाऱ्या काळात महाराष्ट्रातील प्रत्येक जिल्हास्तरावर व्यवसाय मेळावा घेण्याचे नियोजन सुद्धा आखले जाईल.",
+    fullDescription: "We believe in fostering entrepreneurship and helping small businesses grow. Our business development program provides resources, mentorship, and financial guidance to aspiring entrepreneurs and existing business owners. We help them navigate challenges, access funding opportunities, and connect with networks that can propel their businesses forward.",
+    benefits: [
+      "Business mentorship from experienced entrepreneurs",
+      "Access to loan schemes and financial resources",
+      "Business plan development assistance",
+      "Marketing and digital presence guidance",
+      "Networking opportunities with industry experts",
+      "Regular business development workshops and events"
+    ],
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    ctaText: "अधिक माहिती",
+    ctaLink: "/contact?service=business",
+    testimonials: [
+      {
+        name: "राजेश पाटील",
+        quote: "अण्णासाहेब पाटील आर्थिक विकास महामंडळ कर्ज योजनेच्या माध्यमातून मला माझा स्वतःचा व्यवसाय सुरू करण्यासाठी आवश्यक मार्गदर्शन आणि आर्थिक मदत मिळाली. आज माझा व्यवसाय चांगल्य��� प्रकारे चालू आहे.",
+        role: "उद्योजक",
+        image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+      },
+      {
+        name: "सुनिता जाधव",
+        quote: "SMP प्रतिनिधींच्या मार्गदर्शनामुळे मला माझा लघु उद्योग वाढवण्यासाठी आवश्यक कौशल्य आणि ज्ञान मिळाले. त्यांच्या सल्ल्यामुळे मी माझा व्यवसाय विस्तारित करू शकले.",
+        role: "लघु उद्योजक",
+        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80"
+      },
+      {
+        name: "प्रमोद शिंदे",
+        quote: "व्यवसाय मेळाव्यामध्ये सहभागी होऊन मला अनेक नवीन संधी आणि संपर्क मिळाले. आता माझा व्यवसाय स्थानिक पातळीवरून राज्य पातळीवर पोहोचला आहे.",
+        role: "व्यवसायिक",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
       }
     ]
   },
