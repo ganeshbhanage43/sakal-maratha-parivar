@@ -38,6 +38,9 @@ const ServiceDetail: React.FC = () => {
   
   // Check if this is one of the key services we're focusing on
   const isKeyService = ['business', 'employment', 'healthcare', 'education'].includes(serviceId || '');
+  
+  // Check if this is the Fort Conservation service
+  const isFortConservation = serviceId === 'community';
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -69,6 +72,14 @@ const ServiceDetail: React.FC = () => {
                 </h2>
                 <div className="text-gray-700 text-lg leading-relaxed mb-8 whitespace-pre-line">
                   {isKeyService ? service.shortDescription : service.fullDescription}
+                  
+                  {/* Add the new description for Fort Conservation */}
+                  {isFortConservation && (
+                    <div className="mt-6 p-4 bg-gray-50 border-l-4 border-primary rounded">
+                      <p>सिंहगड आणि लोहगड स्वछता मोहीम राबवली असून या पुढेही असे उपक्रम होत राहतील.</p>
+                      <p className="mt-4">अशा उपक्रमांच्या माध्यमातून त्या त्या क्षेत्रातील प्रतिनिधी समोरासमोर भेटून मराठा समाजाच्या हिताचे विचारांची देवाणघेवाण होत राहते.</p>
+                    </div>
+                  )}
                 </div>
                 <Button asChild size="lg" className="text-lg px-8 py-6">
                   <a href={service.ctaLink}>
