@@ -1,3 +1,4 @@
+
 import { BookOpen, Heart, Briefcase, Home, Store, Bell } from 'lucide-react';
 
 export interface Testimonial {
@@ -26,35 +27,35 @@ export const servicesData: ServiceData[] = [
     title: "शिक्षण क्षेत्र",
     icon: BookOpen,
     shortDescription: "महाराष्ट्र सरकार स्थापित स्वायत्त संस्था म्हणून सारथी संस्थेकडून शैक्षणिक क्षेत्रात जे उपक्रम राबविले जातात, ते सर्व उपक्रम तळागाळातील मराठा विद्यार्थ्यांपर्यंत पोहोचविण्याचे काम SMP प्रतिनिधी यांच्याकडून केले जाते.\n\nयामध्ये प्रामुख्याने खालील महत्त्वाचे उपक्रम मोठया प्रमाणात राबविण्याचा प्रयत्न केला जातो:\n\n• स्पर्धा परीक्षा क्लासेस (MPSC/UPSC/Banking/SSC)\n• Defence exam मार्गदर्शन कार्यक्रम (NDA, Navy, इत्यादी)\n• विविध प्रकारच्या शाळा, कॉलेज व पी.एच.डी. स्तरावरील शिष्यवृत्ती योजना\n• परदेशी शिक्षण शिष्यवृत्ती योजना\n• मराठा तरुण कौशल्य विकास कार्यक्रम",
-    fullDescription: "Our education support program aims to break the cycle of poverty through quality education. We work with underprivileged communities to provide access to educational resources, qualified mentors, and scholarship opportunities. Our approach is holistic, addressing not just academic needs but also providing emotional support and life skills training.",
+    fullDescription: "आमचा शैक्षणिक सहाय्यता कार्यक्रम दारिद्र्याचे चक्र दर्जेदार शिक्षणाद्वारे तोडण्याचा उद्देश ठेवतो. आम्ही वंचित समुदायांसोबत काम करून शैक्षणिक संसाधने, अनुभवी मार्गदर्शक आणि शिष्यवृत्ती संधी उपलब्ध करून देतो. आमचा दृष्टिकोन सर्वांगीण आहे, जो केवळ शैक्षणिक गरजा पूर्ण करत नाही तर भावनिक आधार आणि जीवन कौशल्य प्रशिक्षणही प्रदान करतो.",
     benefits: [
-      "Access to quality learning materials and resources",
-      "One-on-one mentoring with qualified educators",
-      "Scholarship opportunities for higher education",
-      "Career guidance and counseling",
-      "Computer literacy and digital skills training",
-      "After-school programs and homework assistance"
+      "दर्जेदार शिक्षण साहित्य आणि संसाधनांची उपलब्धता",
+      "अनुभवी शिक्षकांसोबत वैयक्तिक मार्गदर्शन",
+      "उच्च शिक्षणासाठी शिष्यवृत्ती संधी",
+      "कारकीर्द मार्गदर्शन आणि सल्ला",
+      "संगणक साक्षरता आणि डिजिटल कौशल्य प्रशिक्षण",
+      "शाळेनंतर कार्यक्रम आणि गृहपाठ सहाय्य"
     ],
     image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     ctaText: "अधिक माहिती",
     ctaLink: "/contact?service=education",
     testimonials: [
       {
-        name: "Sarah Johnson",
-        quote: "The scholarship I received changed my life. I'm the first in my family to attend college, and I wouldn't have been able to do it without Empower NGO's support.",
-        role: "University Student",
+        name: "साराह जॉनसन",
+        quote: "मला मिळालेल्या शिष्यवृत्तीने माझे आयुष्य बदलले. मी माझ्या परिवारातील पहिली व्यक्ती आहे जी महाविद्यालयात जाते, आणि सकल मराठा परिवारच्या समर्थनाशिवाय मी हे करू शकले नसते.",
+        role: "विद्यार्थिनी",
         image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
       },
       {
-        name: "Michael Chen",
-        quote: "The mentoring program helped me improve my grades and build confidence. My mentor didn't just help with academics but taught me important life skills too.",
-        role: "High School Student",
+        name: "माइकल चेन",
+        quote: "मार्गदर्शन कार्यक्रमाने मला माझे गुण सुधारण्यास आणि आत्मविश्वास निर्माण करण्यास मदत केली. माझ्या मार्गदर्शकाने केवळ अभ्यासासाठीच मदत केली नाही तर महत्त्वाची जीवन कौशल्येही शिकवली.",
+        role: "विद्यार्थी",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
       },
       {
-        name: "Priya Patel",
-        quote: "As a parent, I've seen remarkable changes in my daughter since she joined the after-school program. Her confidence has grown, and she's so excited about learning now.",
-        role: "Parent",
+        name: "प्रिया पटेल",
+        quote: "एक पालक म्हणून, शाळेनंतरच्या कार्यक्रमात सहभागी झाल्यापासून मी माझ्या मुलीमध्ये लक्षणीय बदल पाहिले आहेत. तिचा आत्मविश्वास वाढला आहे आणि ती आता अभ्यासाबद्दल खूप उत्साही आहे.",
+        role: "पालक",
         image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80"
       }
     ]
@@ -64,35 +65,35 @@ export const servicesData: ServiceData[] = [
     title: "आरोग्य क्षेत्र",
     icon: Heart,
     shortDescription: "सकल मराठा परिवार टीम मेडिकल क्षेत्रामध्ये गेल्या 4 वर्षांपासून कार्यरत आहे. यामध्ये जिल्हा आणि तालुका स्तरावर घेतली जाणारी रक्तदान शिबीरे, वृद्धांसाठी आरोग्य शिबीरे (BP, डोळ्यांचे आजार व इतर मार्गदर्शन), दिव्यांग बांधवांना कृत्रिम अवयव उपलब्ध करून देणे, महाराष्ट्र च्या काना-कोपऱ्यात गोरगरीब लोकांचे ऑपेरेशन मोफत किंवा कमी खर्च मध्ये करून देणे, डिलीव्हरी केसेस, हॉस्पिटल चे बिल कमी करणे अशा अनेक गोष्टीमध्ये शक्य तेवढी (आर्थिक वगळता) मदत SMP टीम चे प्रतिनिधी करत असतात.\n\nCovid काळात पेशंटना बेड उपलब्ध करून देणे, औषधी/इंजेक्शन्स उपलब्ध करून देण्यात मदत करणे, ब्लड/प्लाझ्मा उपलब्ध करून देणे, मानसिक आधार, रुग्णांच्या नातेवाईकांना मोफत जेवण पुरवणे इत्यादी प्रकारची कामे SMP प्रतिनिधी कडून करण्यात आलेली आहेत.",
-    fullDescription: "Access to healthcare is a fundamental right, yet many communities lack basic medical services. Our healthcare access program works to bridge this gap by connecting underserved populations with medical professionals, organizing health camps, providing preventive care education, and assisting with medical expenses for critical treatments.",
+    fullDescription: "आरोग्य सेवांची उपलब्धता हा मूलभूत अधिकार आहे, तरीही अनेक समुदायांना मूलभूत वैद्यकीय सेवा मिळत नाहीत. आमचा आरोग्य सेवा कार्यक्रम वंचित लोकसंख्येला वैद्यकीय तज्ञांशी जोडून, आरोग्य शिबिरे आयोजित करून, प्रतिबंधात्मक काळजी शिक्षण देऊन आणि गंभीर उपचारांसाठी वैद्यकीय खर्चात सहाय्य करून हे अंतर कमी करण्यासाठी कार्य करतो.",
     benefits: [
-      "Free health check-ups and screenings",
-      "Connection to affordable medical services",
-      "Health education and awareness programs",
-      "Preventive care workshops",
-      "Mental health support and counseling",
-      "Assistance with medical expenses for critical treatments"
+      "मोफत आरोग्य तपासणी आणि स्क्रीनिंग",
+      "परवडणाऱ्या वैद्यकीय सेवांशी संपर्क",
+      "आरोग्य शिक्षण आणि जागरूकता कार्यक्रम",
+      "प्रतिबंधात्मक काळजी कार्यशाळा",
+      "मानसिक आरोग्य समर्थन आणि समुपदेशन",
+      "गंभीर उपचारांसाठी वैद्यकीय खर्चात सहाय्य"
     ],
     image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    ctaText: "Access Healthcare Services",
+    ctaText: "अधिक माहिती",
     ctaLink: "/contact?service=healthcare",
     testimonials: [
       {
-        name: "Robert Wilson",
-        quote: "I couldn't afford the treatment I desperately needed. Empower NGO not only helped with the expenses but also connected me with specialists who provided excellent care.",
-        role: "Healthcare Recipient",
+        name: "रॉबर्ट विल्सन",
+        quote: "मला अत्यंत गरजेच्या उपचाराचा खर्च परवडत नव्हता. सकल मराठा परिवारने केवळ खर्चात मदतच केली नाही तर मला तज्ञांशी जोडले ज्यांनी उत्कृष्ट सेवा पुरवली.",
+        role: "लाभार्थी",
         image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
       },
       {
-        name: "Maria Rodriguez",
-        quote: "The health education workshops gave me knowledge I never had about preventive care. Now I can make better health decisions for my family.",
-        role: "Community Member",
+        name: "मारिया रोड्रिगेझ",
+        quote: "आरोग्य शिक्षण कार्यशाळांमुळे मला प्रतिबंधात्मक काळजीबद्दल माहिती मिळाली जी मला आधी माहित नव्हती. आता मी माझ्या कुटुंबासाठी चांगले आरोग्यविषयक निर्णय घेऊ शकते.",
+        role: "समुदाय सदस्य",
         image: "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=689&q=80"
       },
       {
-        name: "Dr. James Thompson",
-        quote: "Working with Empower NGO to provide medical services to underserved communities has been the most rewarding experience of my career. The impact is immediate and tangible.",
-        role: "Volunteer Doctor",
+        name: "डॉ. जेम्स थॉम्पसन",
+        quote: "वंचित समुदायांना वैद्यकीय सेवा पुरविण्यासाठी सकल मराठा परिवारसोबत काम करणे माझ्या कारकिर्दीतील सर्वात समाधानकारक अनुभव राहिला आहे. प्रभाव त्वरित आणि स्पष्ट आहे.",
+        role: "स्वयंसेवक डॉक्टर",
         image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
       }
     ]
@@ -102,35 +103,35 @@ export const servicesData: ServiceData[] = [
     title: "नोकरी व रोजगार क्षेत्र",
     icon: Briefcase,
     shortDescription: "समाजातील बेरोजगार मराठा तरुणांना नोकरी मिळावी या उद्देशाने नोकरीच्या संधी असलेल्या जाहिराती एका PDF मध्ये एकत्रित करून त्या सोशल मीडिया च्या माध्यामातून मराठा तरुणांपर्यंत पोहोचवल्या जातात. यासोबत वेळोवेळी कॉर्पोरेट आणि सरकारी क्षेत्रातील नोकरी संदर्भात आपण Facebook/YouTube सारख्या माध्यमांचा वापर करून तज्ञ व्यक्तींचे live विडिओ घेऊन मार्गदर्शन केले जाते.\nकेंद्र सरकार आणि महाराष्ट्र सरकार यांच्या कडून राबविल्या जाणार्‍या कौशल्य विकास कार्यक्रम अंतर्गत मराठा तरुणांना कौशल्य विकास आणि व्यक्तिगत विकासाच्या संधी उपलब्ध करून दिल्या जातात.",
-    fullDescription: "Economic independence is crucial for sustainable change. Our employment assistance program equips individuals with the skills, resources, and opportunities needed to secure stable employment. We provide comprehensive job training, help with resume preparation, conduct mock interviews, offer career counseling, and connect participants with potential employers.",
+    fullDescription: "आर्थिक स्वातंत्र्य हे शाश्वत बदलासाठी महत्त्वाचे आहे. आमचा रोजगार सहाय्य कार्यक्रम व्यक्तींना स्थिर रोजगार मिळविण्यासाठी आवश्यक कौशल्य, संसाधने आणि संधी देतो. आम्ही संपूर्ण व्यावसायिक प्रशिक्षण, बायोडाटा तयार करण्यास मदत, प्रात्यक्षिक मुलाखती, करिअर समुपदेशन आणि संभाव्य नियोक्त्यांशी जोडण्याची सुविधा प्रदान करतो.",
     benefits: [
-      "Vocational training and skill development",
-      "Resume writing and interview preparation",
-      "Job placement assistance",
-      "Entrepreneurship guidance and support",
-      "Professional networking opportunities",
-      "Ongoing career development coaching"
+      "व्यावसायिक प्रशिक्षण आणि कौशल्य विकास",
+      "बायोडाटा लेखन आणि मुलाखतीची तयारी",
+      "नोकरी प्लेसमेंट सहाय्य",
+      "उद्योजकता मार्गदर्शन आणि समर्थन",
+      "व्यावसायिक नेटवर्किंग संधी",
+      "सातत्यपूर्ण करिअर विकास प्रशिक्षण"
     ],
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    ctaText: "Get Employment Help",
+    ctaText: "अधिक माहिती",
     ctaLink: "/contact?service=employment",
     testimonials: [
       {
-        name: "David Nguyen",
-        quote: "After losing my job during the pandemic, I felt hopeless. The job training program gave me new skills and the confidence to re-enter the workforce. I now have a stable job with growth potential.",
-        role: "Program Graduate",
+        name: "दावीद नगुयेन",
+        quote: "महामारीदरम्यान नोकरी गमावल्यानंतर, मला निराश वाटत होते. नोकरी प्रशिक्षण कार्यक्रमाने मला नवीन कौशल्ये आणि कामाच्या क्षेत्रात पुन्हा प्रवेश करण्याचा आत्मविश्वास दिला. आता माझ्याकडे वाढीच्या क्षमतेसह स्थिर नोकरी आहे.",
+        role: "कार्यक्रम विद्यार्थी",
         image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
       },
       {
-        name: "Lisa Johnson",
-        quote: "The resume workshop completely transformed my job search. I went from no callbacks to multiple interviews within weeks. The career counselors truly cared about my success.",
-        role: "Job Seeker",
+        name: "लीसा जॉनसन",
+        quote: "बायोडाटा कार्यशाळेने माझ्या नोकरी शोधाचे पूर्णपणे परिवर्तन केले. मी काही आठवड्यांत कोणतीही प्रतिक्रिया नसलेल्या स्थितीतून अनेक मुलाखतींपर्यंत पोहोचले. करिअर सल्लागार खरोखर माझ्या यशाची काळजी घेत होते.",
+        role: "नोकरी शोधक",
         image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80"
       },
       {
-        name: "Marcus Washington",
-        quote: "I never thought I could start my own business, but the entrepreneurship program gave me the knowledge and support I needed. My small business is now thriving and supporting my family.",
-        role: "Entrepreneur",
+        name: "मार्कस वॉशिंग्टन",
+        quote: "मला कधीही वाटले नव्हते की मी माझा स्वतःचा व्यवसाय सुरू करू शकेन, परंतु उद्योजकता कार्यक्रमाने मला आवश्यक ज्ञान आणि समर्थन दिले. आता माझा छोटा व्यवसाय भरभराटीस आला आहे आणि माझ्या कुटुंबाचे समर्थन करत आहे.",
+        role: "उद्योजक",
         image: "https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=723&q=80"
       }
     ]
@@ -140,14 +141,14 @@ export const servicesData: ServiceData[] = [
     title: "व्यवसाय आणि उद्योग क्षेत्र",
     icon: Store,
     shortDescription: "सकल मराठा परिवार कडून संपूर्ण महाराष्ट्र मध्ये 300+ प्रत्येक तालुका स्तरावर तालुका प्रतिनिधी नेमून देण्यात आलेले आहेत. हे प्रतिनिधी अण्णासाहेब पाटील आर्थिक विकास महामंडळ कर्ज योजना च्या माध्यमातून मराठा उद्योजकांना त्यांच्या व्यवसाय वाढीसाठी आणि मराठा नवउद्योजकांना नवीन व्यवसाय उभारण्यासाठी मोफत मार्गदर्शन करत असतात. येणार्‍या काळात महाराष्ट्राच्या कानाकोपऱ्यातील प्रत्येक गावांत SMP प्रतिनिधी अण्णासाहेब पाटील आर्थिक विकास महामंडळ कर्ज योजनेच्या माध्यमातुन मराठा बांधवांना व्यावसायिक प्रगती संदर्भात मार्गदर्शन करण्यास कटिबद्ध असतील.\n\nयासोबतच येणाऱ्या काळात महाराष्ट्रातील प्रत्येक जिल्हास्तरावर व्यवसाय मेळावा घेण्याचे नियोजन सुद्धा आखले जाईल.",
-    fullDescription: "We believe in fostering entrepreneurship and helping small businesses grow. Our business development program provides resources, mentorship, and financial guidance to aspiring entrepreneurs and existing business owners. We help them navigate challenges, access funding opportunities, and connect with networks that can propel their businesses forward.",
+    fullDescription: "आम्ही उद्योजकतेला प्रोत्साहन देण्यावर आणि लघु व्यवसायांना वाढविण्यास मदत करण्यावर विश्वास ठेवतो. आमचा व्यवसाय विकास कार्यक्रम महत्वाकांक्षी उद्योजकांना आणि विद्यमान व्यवसाय मालकांना संसाधने, मार्गदर्शन आणि आर्थिक मार्गदर्शन प्रदान करतो. आम्ही त्यांना आव्हानांना सामोरे जाण्यास, निधी संधींचा वापर करण्यास आणि त्यांचे व्यवसाय पुढे नेऊ शकणाऱ्या नेटवर्क्सशी जोडण्यास मदत करतो.",
     benefits: [
-      "Business mentorship from experienced entrepreneurs",
-      "Access to loan schemes and financial resources",
-      "Business plan development assistance",
-      "Marketing and digital presence guidance",
-      "Networking opportunities with industry experts",
-      "Regular business development workshops and events"
+      "अनुभवी उद्योजकांकडून व्यवसाय मार्गदर्शन",
+      "कर्ज योजना आणि आर्थिक संसाधनांची उपलब्धता",
+      "व्यावसायिक योजना विकासात सहाय्य",
+      "मार्केटिंग आणि डिजिटल उपस्थिती मार्गदर्शन",
+      "उद्योग तज्ञांसोबत नेटवर्किंग संधी",
+      "नियमित व्यावसायिक विकास कार्यशाळा आणि कार्यक्रम"
     ],
     image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
     ctaText: "अधिक माहिती",
@@ -178,14 +179,14 @@ export const servicesData: ServiceData[] = [
     title: "आपत्कालीन मदत",
     icon: Bell,
     shortDescription: "अहमदनगर, नाशिक आणि पुणे जिल्ह्यात सकल मराठा परिवाराच्या माध्यमातून कोरोना काळात रुग्णांच्या नातेवाईकांना मोफत २ वेळचे जेवण पुरविण्यात आले होते. सोबतच समाजातील गरजू बांधवांना किराणा साहित्याचे किट बनवून वाटण्यात आले होते. \n\nसातारा-सांगली आणि रायगड-रत्नागिरी जिल्ह्यांमध्ये २०२१-२२ दरम्यान आलेल्या पूर परिस्थिती मध्ये सकल मराठा परिवार टीम कडून संपूर्ण महाराष्ट्र भरातून मदत गोळा करण्यात आली आणि निवडक प्रतिनिधी कडून ते सर्व साहित्य पूरग्रस्तांना पोहोचविण्यात आले. \n\nयासोबतच रत्नागिरी जिल्ह्यातील काही गावांमध्ये आरोग्य शिबिरांचे आयोजन करण्यात आले.",
-    fullDescription: "Our emergency response program rapidly mobilizes resources during crises such as natural disasters, pandemics, or other emergencies. We provide immediate relief through food distribution, temporary shelter, medical aid, and emotional support. Our volunteers are trained to respond quickly and effectively to help communities recover from unexpected challenges.",
+    fullDescription: "आमचा आपत्कालीन प्रतिसाद कार्यक्रम नैसर्गिक आपत्ती, साथीचे रोग किंवा इतर आपत्कालीन परिस्थितीदरम्यान संसाधनांची जलद उभारणी करतो. आम्ही अन्न वितरण, तात्पुरते निवारा, वैद्यकीय मदत आणि भावनिक समर्थनाद्वारे तात्काळ मदत पुरवतो. आमचे स्वयंसेवक अनपेक्षित आव्हानांतून समुदायांना सावरण्यास मदत करण्यासाठी जलद आणि प्रभावीपणे प्रतिसाद देण्यास प्रशिक्षित आहेत.",
     benefits: [
-      "Rapid emergency response during crises",
-      "Food and essential supplies distribution",
-      "Temporary shelter arrangements",
-      "Medical aid in emergency situations",
-      "Coordination with local authorities and services",
-      "Post-disaster rehabilitation support"
+      "संकटकाळात जलद आपत्कालीन प्रतिसाद",
+      "अन्न आणि आवश्यक वस्तूंचे वितरण",
+      "तात्पुरत्या निवाराची व्यवस्था",
+      "आपत्कालीन परिस्थितीत वैद्यकीय मदत",
+      "स्थानिक अधिकारी आणि सेवांसोबत समन्वय",
+      "आपत्तीनंतर पुनर्वसन समर्थन"
     ],
     image: "https://images.unsplash.com/photo-1603827457577-609e6f42a45e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80",
     ctaText: "अधिक माहिती",
@@ -216,14 +217,14 @@ export const servicesData: ServiceData[] = [
     title: "गडकिल्ले संवर्धन",
     icon: Home,
     shortDescription: "महाराष्ट्रातील गडकिल्ले हे ऐतिहासिक वारसा आहेत आणि त्यांचे संवर्धन करणे ही आपली जबाबदारी आहे. सकल मराठा परिवार फौंडेशन गडकिल्ल्यांच्या संवर्धनासाठी विविध उपक्रम राबवते. यामध्ये गड स्वच्छता अभियान, वृक्षारोपण, पर्यटन स्थळांचा विकास आणि ऐतिहासिक महत्त्व जपणे या बाबींचा समावेश आहे. आम्ही दरवर्षी शिवजयंती निमित्त विशेष कार्यक्रमांचे आयोजन करून युवा पिढीला महाराष्ट्राच्या गौरवशाली इतिहासाबद्दल जागरूक करतो.",
-    fullDescription: "Our fort conservation program aims to preserve and protect the historical forts of Maharashtra, which are an integral part of our cultural heritage. We conduct regular clean-up drives, tree plantation, development of tourist spots, and educational programs to spread awareness about the historical significance of these forts. We work closely with local authorities and communities to ensure sustainable conservation of these historical monuments.",
+    fullDescription: "आमचा गडकिल्ले संवर्धन कार्यक्रम महाराष्ट्राच्या ऐतिहासिक किल्ल्यांचे जतन आणि संरक्षण करण्याचे उद्दिष्ट ठेवतो, जे आमच्या सांस्कृतिक वारशाचा अविभाज्य भाग आहेत. आम्ही नियमित स्वच्छता मोहिमा, वृक्षारोपण, पर्यटन स्थळांचा विकास आणि या किल्ल्यांच्या ऐतिहासिक महत्त्वाबद्दल जागरूकता पसरविण्यासाठी शैक्षणिक कार्यक्रम आयोजित करतो. या ऐतिहासिक स्मारकांच्या शाश्वत संवर्धनासाठी आम्ही स्थानिक अधिकारी आणि समुदायांसोबत जवळून काम करतो.",
     benefits: [
-      "Preservation of historical monuments and heritage sites",
-      "Development of sustainable tourism around fort areas",
-      "Environmental protection through cleanup and plantation activities",
-      "Educational programs about historical significance",
-      "Community involvement in conservation efforts",
-      "Promoting cultural awareness among younger generations"
+      "ऐतिहासिक स्मारके आणि वारसा स्थळांचे संवर्धन",
+      "किल्ला क्षेत्रांमध्ये शाश्वत पर्यटनाचा विकास",
+      "स्वच्छता आणि वृक्षारोपण कार्यक्रमांद्वारे पर्यावरण संरक्षण",
+      "ऐतिहासिक महत्त्वाबद्दल शैक्षणिक कार्यक्रम",
+      "संवर्धन प्रयत्नांमध्ये समुदायाचा सहभाग",
+      "तरुण पिढीमध्ये सांस्कृतिक जागरूकता वाढविणे"
     ],
     image: "https://images.unsplash.com/photo-1539798487796-7c2284ad1855?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     ctaText: "अधिक माहिती",
@@ -231,7 +232,7 @@ export const servicesData: ServiceData[] = [
     testimonials: [
       {
         name: "आदित्य पाटील",
-        quote: "गडकिल्ले संवर्धन उपक्रमामध्ये सह���ागी होऊन मला महाराष्ट्राच्या समृद्ध इतिहासाबद्दल अधिक जाणून घेण्याची संधी मिळाली. हा एक अद्भुत अनुभव होता.",
+        quote: "गडकिल्ले संवर्धन उपक्रमामध्ये सहभागी होऊन मला महाराष्ट्राच्या समृद्ध इतिहासाबद्दल अधिक जाणून घेण्याची संधी मिळाली. हा एक अद्भुत अनुभव होता.",
         role: "स्वयंसेवक",
         image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
       },
@@ -254,3 +255,4 @@ export const servicesData: ServiceData[] = [
 export const getServiceById = (id: string): ServiceData | undefined => {
   return servicesData.find(service => service.id === id);
 };
+
