@@ -1,4 +1,3 @@
-
 import { BookOpen, Heart, Briefcase, Home, Store, Bell } from 'lucide-react';
 
 export interface Testimonial {
@@ -214,38 +213,38 @@ export const servicesData: ServiceData[] = [
   },
   {
     id: "community",
-    title: "उद्योजकता विकास",
+    title: "गडकिल्ले संवर्धन",
     icon: Home,
-    shortDescription: "सकल मराठा परिवार कडून संपूर्ण महाराष्ट्र मध्ये 300+ प्रत्येक तालुका स्तरावर तालुका प्रतिनिधी नेमून देण्यात आलेले आहेत. हे प्रतिनिधी अण्णासाहेब पाटील आर्थिक विकास महामंडळ कर्ज योजना च्या माध्यमातून मराठा उद्योजकांना त्यांच्या व्यवसाय वाढीसाठी आणि मराठा नवउद्योजकांना नवीन व्यवसाय उभारण्यासाठी मोफत मार्गदर्शन करत असतात. येणार्‍या काळात महाराष्ट्राच्या कानाकोपऱ्यातील प्रत्येक गावांत SMP प्रतिनिधी अण्णासाहेब पाटील आर्थिक विकास महामंडळ कर्ज योजनेच्या माध्यमातुन मराठा बांधवांना व्यावसायिक प्रगती संदर्भात मार्गदर्शन करण्यास कटिबद्ध असतील.\n\nयासोबतच येणाऱ्या काळात महाराष्ट्रातील प्रत्येक जिल्हास्तरावर व्यवसाय मेळावा घेण्याचे नियोजन सुद्धा आखले जाईल.",
-    fullDescription: "We believe in fostering entrepreneurship and helping small businesses grow. Our entrepreneurship development program provides resources, mentorship, and financial guidance to aspiring entrepreneurs and existing business owners. We help them navigate challenges, access funding opportunities, and connect with networks that can propel their businesses forward.",
+    shortDescription: "महाराष्ट्रातील गडकिल्ले हे ऐतिहासिक वारसा आहेत आणि त्यांचे संवर्धन करणे ही आपली जबाबदारी आहे. सकल मराठा परिवार फौंडेशन गडकिल्ल्यांच्या संवर्धनासाठी विविध उपक्रम राबवते. यामध्ये गड स्वच्छता अभियान, वृक्षारोपण, पर्यटन स्थळांचा विकास आणि ऐतिहासिक महत्त्व जपणे या बाबींचा समावेश आहे. आम्ही दरवर्षी शिवजयंती निमित्त विशेष कार्यक्रमांचे आयोजन करून युवा पिढीला महाराष्ट्राच्या गौरवशाली इतिहासाबद्दल जागरूक करतो.",
+    fullDescription: "Our fort conservation program aims to preserve and protect the historical forts of Maharashtra, which are an integral part of our cultural heritage. We conduct regular clean-up drives, tree plantation, development of tourist spots, and educational programs to spread awareness about the historical significance of these forts. We work closely with local authorities and communities to ensure sustainable conservation of these historical monuments.",
     benefits: [
-      "Entrepreneurship mentorship from experienced business leaders",
-      "Access to loan schemes and financial resources",
-      "Business plan development assistance",
-      "Marketing and digital presence guidance",
-      "Networking opportunities with industry experts",
-      "Regular business development workshops and events"
+      "Preservation of historical monuments and heritage sites",
+      "Development of sustainable tourism around fort areas",
+      "Environmental protection through cleanup and plantation activities",
+      "Educational programs about historical significance",
+      "Community involvement in conservation efforts",
+      "Promoting cultural awareness among younger generations"
     ],
     image: "https://images.unsplash.com/photo-1539798487796-7c2284ad1855?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     ctaText: "अधिक माहिती",
     ctaLink: "/contact?service=community",
     testimonials: [
       {
-        name: "राजेश पाटील",
-        quote: "अण्णासाहेब पाटील आर्थिक विकास महामंडळ कर्ज योजनेच्या माध्यमातून मला माझा स्वतःचा उद्योग सुरू करण्यासाठी आवश्यक मार्गदर्शन आणि आर्थिक मदत मिळाली.",
-        role: "नवउद्योजक",
+        name: "आदित्य पाटील",
+        quote: "गडकिल्ले संवर्धन उपक्रमामध्ये सह���ागी होऊन मला महाराष्ट्राच्या समृद्ध इतिहासाबद्दल अधिक जाणून घेण्याची संधी मिळाली. हा एक अद्भुत अनुभव होता.",
+        role: "स्वयंसेवक",
         image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
       },
       {
-        name: "सुनिता जाधव",
-        quote: "SMP प्रतिनिधींच्या मार्गदर्शनामुळे मला माझा लघु उद्योग वाढवण्यासाठी आवश्यक कौशल्य आणि ज्ञान मिळाले. त्यांच्या सल्ल्यामुळे मी माझा व्यवसाय विस्तारित करू शकले.",
-        role: "लघु उद्योजक",
+        name: "प्रियांका शिंदे",
+        quote: "गड स्वच्छता अभियानामध्ये सहभागी होणे ही माझ्यासाठी अभिमानाची गोष्ट आहे. आमच्या ऐतिहासिक वारशाचे संरक्षण करण्यात माझा हातभार लागला याचा मला अभिमान आहे.",
+        role: "कार्यक्रम सहभागी",
         image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80"
       },
       {
-        name: "विजय गायकवाड",
-        quote: "व्यवसाय मेळाव्यामध्ये सहभागी होऊन मला अनेक नवीन संधी आणि संपर्क मिळाले. आता माझा उद्योग स्थानिक पातळीवरून राज्य पातळीवर पोहोचला आहे.",
-        role: "उद्योजक",
+        name: "संतोष गायकवाड",
+        quote: "या उपक्रमामुळे स्थानिक लोकांना रोजगाराच्या संधी मिळाल्या आहेत आणि पर्यटन वाढले आहे. हा उपक्रम फक्त गडकिल्ले संवर्धनापुरता मर्यादित नाही तर त्याचा सकारात्मक प्रभाव समाजावर देखील पडत आहे.",
+        role: "स्थानिक रहिवासी",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
       }
     ]
@@ -255,4 +254,3 @@ export const servicesData: ServiceData[] = [
 export const getServiceById = (id: string): ServiceData | undefined => {
   return servicesData.find(service => service.id === id);
 };
-
