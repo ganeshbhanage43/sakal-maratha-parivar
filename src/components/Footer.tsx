@@ -1,8 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Mail, MapPin, Clock } from 'lucide-react';
-
 const Footer: React.FC = () => {
   return <footer className="bg-gray-900 text-white">
       <div className="container-custom py-16">
@@ -76,7 +74,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <MapPin size={20} className="text-primary mt-1 flex-shrink-0" />
-                <span className="text-gray-300">S. No 247/3 Prabhat Nagar, Wahadne Colony Dindori Rd, Nashik, Maharashtra, India, 422004.</span>
+                <span className="text-gray-300">S. No 247/3 प्रभात नगर , वहाडणे कॉलनी, दिंडोरी रोड, नाशिक, महाराष्ट्र, भारत, ४२२००४.</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="text-primary flex-shrink-0" />
@@ -99,5 +97,4 @@ const Footer: React.FC = () => {
       </div>
     </footer>;
 };
-
 export default Footer;

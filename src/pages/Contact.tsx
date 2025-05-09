@@ -79,7 +79,7 @@ const Contact = () => {
                     <MapPin className="h-5 w-5 text-primary mr-3 mt-1" />
                     <div>
                       <h3 className="font-semibold">Address</h3>
-                      <p className="text-muted-foreground">S. No 247/3 Prabhat Nagar, Wahadne Colony Dindori Rd, Nashik, Maharashtra, India, 422004.</p>
+                      <p className="text-muted-foreground">S. No 247/3 प्रभात नगर , वहाडणे कॉलनी, दिंडोरी रोड, नाशिक, महाराष्ट्र, भारत, ४२२००४.</p>
                     </div>
                   </div>
                   
