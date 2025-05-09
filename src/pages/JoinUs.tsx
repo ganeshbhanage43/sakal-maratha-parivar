@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -15,48 +16,50 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 // Form validation schema
 const formSchema = z.object({
   name: z.string().min(2, {
-    message: "Name must be at least 2 characters."
+    message: "नाव किमान २ अक्षरे असणे आवश्यक आहे."
   }),
   email: z.string().email({
-    message: "Please enter a valid email address."
+    message: "कृपया वैध ईमेल पत्ता प्रविष्ट करा."
   }),
   phone: z.string().min(10, {
-    message: "Please enter a valid phone number."
+    message: "कृपया वैध फोन नंबर प्रविष्ट करा."
   }),
   interest: z.string({
-    required_error: "Please select an area of interest."
+    required_error: "कृपया आवडीचे क्षेत्र निवडा."
   }),
   message: z.string().min(10, {
-    message: "Message must be at least 10 characters."
+    message: "संदेश किमान १० अक्षरे असणे आवश्यक आहे."
   }).max(500, {
-    message: "Message cannot exceed 500 characters."
+    message: "संदेश ५०० अक्षरांपेक्षा जास्त असू शकत नाही."
   })
 });
+
 const volunteerOpportunities = [{
-  title: "Mentoring",
-  description: "Guide and support individuals through knowledge sharing and advice.",
+  title: "मार्गदर्शन",
+  description: "ज्ञान आणि सल्ला वाटून व्यक्तींना मार्गदर्शन आणि सहाय्य करणे.",
   icon: Book
 }, {
-  title: "Event Organization",
-  description: "Help plan and execute community events and fundraisers.",
+  title: "कार्यक्रम आयोजन",
+  description: "समुदाय कार्यक्रमांचे नियोजन आणि अंमलबजावणी करण्यात मदत करणे.",
   icon: Calendar
 }, {
-  title: "Support Services",
-  description: "Provide essential services to those in need within our programs.",
+  title: "सहाय्य सेवा",
+  description: "आमच्या कार्यक्रमांमध्ये गरजूंना आवश्यक सेवा प्रदान करणे.",
   icon: Heart
 }, {
-  title: "Community Outreach",
-  description: "Connect with the broader community to raise awareness.",
+  title: "समुदाय जागृती",
+  description: "जागरूकता वाढवण्यासाठी व्यापक समुदायाशी जोडणे.",
   icon: Users
 }, {
-  title: "Communications",
-  description: "Help with social media, newsletters, and other communications.",
+  title: "संवाद",
+  description: "सोशल मीडिया, न्यूजलेटर आणि इतर संवादांमध्ये मदत करणे.",
   icon: MessageSquare
 }, {
-  title: "Helpline Volunteer",
-  description: "Staff our support helpline to assist those seeking information.",
+  title: "हेल्पलाइन स्वयंसेवक",
+  description: "माहिती शोधणाऱ्यांना मदत करण्यासाठी आमच्या सहाय्य हेल्पलाइनचे कार्य करणे.",
   icon: Headphones
 }];
+
 const JoinUs = () => {
   const {
     toast
@@ -74,8 +77,8 @@ const JoinUs = () => {
     console.log(values);
     // In a real app, you would send this data to a server
     toast({
-      title: "Form submitted successfully!",
-      description: "We'll be in touch with you soon."
+      title: "अर्ज यशस्वीरीत्या सादर केला गेला!",
+      description: "आम्ही लवकरच आपल्याशी संपर्क साधू."
     });
     form.reset();
   }
@@ -86,7 +89,7 @@ const JoinUs = () => {
         <section className="bg-primary py-20 px-4 relative">
           <div className="absolute inset-0 bg-black/20"></div>
           <div className="container-custom relative z-10 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Join Our Team</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">आमच्या टीममध्ये सामील व्हा</h1>
             <p className="text-white/90 text-lg max-w-3xl mx-auto">आजच सकल मराठा परिवाराचा भाग व्हा आणि मराठ्यांनी मिळून मराठ्यांच्या प्रगतीला हातभार लावण्याचे स्वप्न साकार करा.</p>
           </div>
         </section>
@@ -96,20 +99,18 @@ const JoinUs = () => {
           <div className="container-custom">
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <div>
-                <h2 className="text-3xl font-bold mb-6">Why Join Us?</h2>
+                <h2 className="text-3xl font-bold mb-6">आमच्यासोबत का सामील व्हावे?</h2>
                 <p className="text-gray-700 mb-4">
-                  At Empower NGO, we believe in the power of community and collective action. 
-                  By joining our team, you'll have the opportunity to make a real impact 
-                  on the lives of those in need, while developing valuable skills and 
-                  building meaningful connections.
+                  सोशल मीडियाच्या माध्यमातून सकल मराठा परिवार मधील सदस्य व प्रतिनिधींना संपर्क करू शकता.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Whether you have just a few hours to spare or are looking for a more 
-                  substantial commitment, we have opportunities that can fit your schedule 
-                  and utilize your unique talents and skills.
+                  संघटनेमध्ये येण्यासाठी आपल्याकडे फक्त मराठा बांधवांच्या प्रगती आणि हिताशी संबंधित काम करण्याची तळमळ असली पाहिजे. संघटनेमध्ये येण्याआधी आपली सामाजिक, राजकीय, शैक्षणिक, व्यावसायिक, आर्थिक पार्श्वभूमी काहीही असली तरी चालेल, फक्त ज्यावेळी सकल मराठा परिवार संघटनेसोबत जोडले जाल त्यावेळी स्वतःच्या वैयक्तिक महत्त्वकांक्षा आणि स्वार्थ यांना बाजूला ठेवून समाजाप्रती आपले कर्तव्य निभावण्याची तयारी असावी.
+                </p>
+                <p className="text-gray-700 mb-4">
+                  संघटनेमधील प्रत्येक प्रतिनिधी आणि सदस्य आपले कर्तव्य म्हणून समाजाचे काम करण्यासाठी इथे येत असतो त्यामुळे एकमेकांबद्दल आदराची भावना ठेवणे गरजेचे आहे.
                 </p>
                 <p className="text-gray-700">
-                  Together, we can create a more equitable and compassionate community.
+                  हे काम करत असताना आपल्याला कोणत्याही प्रकारचे आर्थिक सहाय्य करण्याची गरज नाही, यामध्ये फक्त आपल्या सोयीनुसार वेळेची गुंतवणूक करणे महत्त्वाचे आहे.
                 </p>
               </div>
               <div className="flex justify-center">
@@ -122,7 +123,7 @@ const JoinUs = () => {
         {/* Volunteer Opportunities */}
         <section className="py-16 bg-gray-50">
           <div className="container-custom">
-            <h2 className="text-3xl font-bold mb-10 text-center">Volunteer Opportunities</h2>
+            <h2 className="text-3xl font-bold mb-10 text-center">स्वयंसेवा संधी</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {volunteerOpportunities.map((opportunity, index) => {
               const Icon = opportunity.icon;
@@ -141,16 +142,16 @@ const JoinUs = () => {
         {/* Sign-Up Form */}
         <section className="py-16 bg-white">
           <div className="container-custom max-w-3xl">
-            <h2 className="text-3xl font-bold mb-10 text-center">Sign Up to Volunteer</h2>
+            <h2 className="text-3xl font-bold mb-10 text-center">स्वयंसेवक म्हणून नोंदणी करा</h2>
             
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField control={form.control} name="name" render={({
                 field
               }) => <FormItem>
-                      <FormLabel>Full Name</FormLabel>
+                      <FormLabel>पूर्ण नाव</FormLabel>
                       <FormControl>
-                        <Input placeholder="John Doe" {...field} />
+                        <Input placeholder="संपूर्ण नाव" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>} />
@@ -158,9 +159,9 @@ const JoinUs = () => {
                 <FormField control={form.control} name="email" render={({
                 field
               }) => <FormItem>
-                      <FormLabel>Email Address</FormLabel>
+                      <FormLabel>ईमेल पत्ता</FormLabel>
                       <FormControl>
-                        <Input type="email" placeholder="john.doe@example.com" {...field} />
+                        <Input type="email" placeholder="आपला@ईमेल.com" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>} />
@@ -168,9 +169,9 @@ const JoinUs = () => {
                 <FormField control={form.control} name="phone" render={({
                 field
               }) => <FormItem>
-                      <FormLabel>Phone Number</FormLabel>
+                      <FormLabel>फोन नंबर</FormLabel>
                       <FormControl>
-                        <Input placeholder="(123) 456-7890" {...field} />
+                        <Input placeholder="9876543210" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>} />
@@ -178,20 +179,20 @@ const JoinUs = () => {
                 <FormField control={form.control} name="interest" render={({
                 field
               }) => <FormItem>
-                      <FormLabel>Area of Interest</FormLabel>
+                      <FormLabel>आवडीचे क्षेत्र</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger>
-                            <SelectValue placeholder="Select an area of interest" />
+                            <SelectValue placeholder="आवडीचे क्षेत्र निवडा" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="mentoring">Mentoring</SelectItem>
-                          <SelectItem value="events">Event Organization</SelectItem>
-                          <SelectItem value="support">Support Services</SelectItem>
-                          <SelectItem value="outreach">Community Outreach</SelectItem>
-                          <SelectItem value="communications">Communications</SelectItem>
-                          <SelectItem value="helpline">Helpline Volunteer</SelectItem>
+                          <SelectItem value="mentoring">मार्गदर्शन</SelectItem>
+                          <SelectItem value="events">कार्यक्रम आयोजन</SelectItem>
+                          <SelectItem value="support">सहाय्य सेवा</SelectItem>
+                          <SelectItem value="outreach">समुदाय जागृती</SelectItem>
+                          <SelectItem value="communications">संवाद</SelectItem>
+                          <SelectItem value="helpline">हेल्पलाइन स्वयंसेवक</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -200,14 +201,14 @@ const JoinUs = () => {
                 <FormField control={form.control} name="message" render={({
                 field
               }) => <FormItem>
-                      <FormLabel>Message</FormLabel>
+                      <FormLabel>संदेश</FormLabel>
                       <FormControl>
-                        <Textarea placeholder="Tell us about yourself and why you'd like to volunteer with us..." className="min-h-[120px]" {...field} />
+                        <Textarea placeholder="स्वतःबद्दल आणि आपण आमच्यासोबत स्वयंसेवक का होऊ इच्छिता याबद्दल सांगा..." className="min-h-[120px]" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>} />
                 
-                <Button type="submit" className="w-full">Submit Application</Button>
+                <Button type="submit" className="w-full">अर्ज सादर करा</Button>
               </form>
             </Form>
           </div>
