@@ -113,7 +113,7 @@ const JoinUs = () => {
                 </p>
               </div>
               <div className="flex justify-center">
-                <img src="/placeholder.svg" alt="Volunteers working together" className="rounded-lg shadow-lg max-w-full h-auto" />
+                
               </div>
             </div>
           </div>
