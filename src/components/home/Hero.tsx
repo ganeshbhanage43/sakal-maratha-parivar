@@ -1,8 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-
 const Hero: React.FC = () => {
   return <section className="pt-24 pb-16 md:pt-32 md:pb-24 relative bg-gradient-to-r from-blue-900 to-blue-700 text-white overflow-hidden">
       {/* Background overlay with slight opacity */}
@@ -12,7 +10,7 @@ const Hero: React.FC = () => {
     }}></div>
       
       {/* Content */}
-      <div className="container-custom relative z-10">
+      <div className="container-custom relative z-10 bg-[#000a00]/0">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">
             सकल मराठा परिवार
@@ -37,5 +35,4 @@ const Hero: React.FC = () => {
       </div>
     </section>;
 };
-
 export default Hero;
