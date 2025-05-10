@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Mail, MapPin, Clock } from 'lucide-react';
@@ -39,6 +40,9 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-primary transition-colors">संस्थेचे सेवाकार्य</Link>
+              </li>
+              <li>
+                <Link to="/gallery" className="text-gray-300 hover:text-primary transition-colors">छायाचित्र गॅलरी</Link>
               </li>
               <li>
                 <Link to="/join" className="text-gray-300 hover:text-primary transition-colors">सामील व्हा</Link>

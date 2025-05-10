@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
             <Link to="/" className="font-medium hover:text-primary transition-colors">मुखपृष्ठ</Link>
             <Link to="/about" className="font-medium hover:text-primary transition-colors">आमच्याबद्दल थोडक्यात</Link>
             <Link to="/services" className="font-medium hover:text-primary transition-colors">संस्थेचे सेवाकार्य</Link>
-            
+            <Link to="/gallery" className="font-medium hover:text-primary transition-colors">छायाचित्र गॅलरी</Link>
             <Link to="/join" className="font-medium hover:text-primary transition-colors">सामील व्हा</Link>
             <Link to="/contact" className="font-medium hover:text-primary transition-colors">संपर्क</Link>
           </div>
@@ -48,8 +48,8 @@ const Navbar: React.FC = () => {
           <Link to="/services" className="font-medium text-lg hover:text-primary transition-colors" onClick={toggleMenu}>
             संस्थेचे सेवाकार्य
           </Link>
-          <Link to="/events" className="font-medium text-lg hover:text-primary transition-colors" onClick={toggleMenu}>
-            Events
+          <Link to="/gallery" className="font-medium text-lg hover:text-primary transition-colors" onClick={toggleMenu}>
+            छायाचित्र गॅलरी
           </Link>
           <Link to="/join" className="font-medium text-lg hover:text-primary transition-colors" onClick={toggleMenu}>
             सामील व्हा

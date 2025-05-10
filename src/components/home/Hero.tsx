@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -22,6 +23,9 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up">
             <Button asChild className="bg-secondary hover:bg-secondary-light text-white font-medium py-3 px-8 rounded-md text-lg transition-colors duration-300">
               <Link to="/join-us">स्वयंसेवक बना!</Link>
+            </Button>
+            <Button asChild variant="outline" className="bg-transparent border-white text-white hover:bg-white/10 font-medium py-3 px-8 rounded-md text-lg transition-colors duration-300">
+              <Link to="/gallery">आमची गॅलरी पहा</Link>
             </Button>
           </div>
         </div>
