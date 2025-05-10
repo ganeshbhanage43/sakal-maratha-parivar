@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -71,33 +70,6 @@ const Events: React.FC = () => {
     location: "Community Center",
     link: "/events/leadership-workshop"
   }];
-  
-  return (
-    <section className="py-16 bg-gray-50">
-      <div className="container-custom">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">आगामी कार्यक्रम</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            सकल मराठा परिवारातर्फे आयोजित केलेले आगामी कार्यक्रम. या कार्यक्रमांमध्ये सहभागी होऊन आपलंही योगदान द्या.
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {events.map((event, index) => (
-            <EventCard key={index} {...event} />
-          ))}
-        </div>
-        
-        <div className="mt-12 text-center">
-          <Button asChild variant="outline" className="group">
-            <Link to="/gallery" className="flex items-center justify-center">
-              आमची सर्व छायाचित्र गॅलरी पहा
-              <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </Button>
-        </div>
-      </div>
-    </section>
-  );
+  return;
 };
 export default Events;
