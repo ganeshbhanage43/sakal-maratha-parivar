@@ -9,7 +9,6 @@ import { Slider } from '@/components/ui/slider';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Heart, Users, GraduationCap, Home, Briefcase, FileText, Calendar, ChartBar, Info } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
-
 const AboutUs = () => {
   const [donationAmount, setDonationAmount] = useState<number>(25);
   const [customAmount, setCustomAmount] = useState<string>('');
@@ -41,7 +40,11 @@ const AboutUs = () => {
                   <span className="text-primary">सकल मराठा परिवार (SMP)</span>
                 </h1>
                 <p className="mb-6 text-lg text-slate-500">सकल मराठा परिवार (SMP) मराठा समाजाला मुख्यतः शैक्षणिक, व्यवसायिक, नोकरी व आर्थिक क्षेत्रात प्रगती करण्यासाठी सतत प्रयत्नशील राहणारी संस्था असून, सोबतच समाजाचे आपण काहीतरी देणे लागतो या भावनेने वैद्यकीय क्षेत्रात समाजातील सर्व घटकांना सतत मदत करत आहे व भविष्यात करत राहणार आहे</p>
-                <p className="mb-6 text-lg text-slate-500">मिशन :- (short term) सामाजिक उपक्रमांच्या माध्यमातून मराठा तरुण पिढी मध्ये मराठा विकासाचे बीज रोवून एक कट्टर मराठा फळी तयार करणे. व्हिजन :- (Long Term) मराठा समाजातील तरुण पिढीला भविष्यात सामाजिक, आर्थिक, राजकीय, शैक्षणिक, नोकरी, व्यावसायिक इत्यादी प्रत्येक क्षेत्रात अग्रस्थानी आणणे आणि त्यायोगे सामान्य मराठ्यांचे वर्चस्व पुन्हा प्रस्थापित करणे. समाजातील शहरी व ग्रामीण भागातील मराठा वर्गाला मुख्य प्रवाहात आणण्यासाठी कटिबद्धरीत्या प्रयत्न करणे.</p>
+                <p className="mb-6 text-lg text-slate-500">मिशन :- (short term) सामाजिक उपक्रमांच्या माध्यमातून मराठा तरुण पिढी मध्ये मराठा विकासाचे बीज रोवून एक कट्टर मराठा फळी तयार करणे. 
+
+व्हिजन :- (Long Term) मराठा समाजातील तरुण पिढीला भविष्यात सामाजिक, आर्थिक, राजकीय, शैक्षणिक, नोकरी, व्यावसायिक इत्यादी प्रत्येक क्षेत्रात अग्रस्थानी आणणे आणि त्यायोगे सामान्य मराठ्यांचे वर्चस्व पुन्हा प्रस्थापित करणे. 
+
+समाजातील शहरी व ग्रामीण भागातील मराठा वर्गाला मुख्य प्रवाहात आणण्यासाठी कटिबद्धरीत्या प्रयत्न करणे.</p>
               </div>
               <div className="relative animate-fade-in">
                 <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
