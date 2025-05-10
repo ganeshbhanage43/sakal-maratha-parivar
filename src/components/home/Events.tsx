@@ -1,7 +1,9 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Calendar, ArrowRight, MapPin, Clock } from 'lucide-react';
+
 interface EventCardProps {
   image: string;
   title: string;
@@ -10,6 +12,7 @@ interface EventCardProps {
   location: string;
   link: string;
 }
+
 const EventCard: React.FC<EventCardProps> = ({
   image,
   title,
@@ -38,7 +41,7 @@ const EventCard: React.FC<EventCardProps> = ({
         </div>
         <div className="mt-auto">
           <Button asChild variant="ghost" className="group">
-            <Link to={link} className="flex items-center text-primary font-medium">
+            <Link to={link} className="flex items-center text-primary font-medium" onClick={() => window.scrollTo(0, 0)}>
               अधिक माहितीसाठी
               <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>
@@ -47,6 +50,7 @@ const EventCard: React.FC<EventCardProps> = ({
       </div>
     </div>;
 };
+
 const Events: React.FC = () => {
   const events = [{
     image: "https://images.unsplash.com/photo-1582213782179-e0d4d3cce817?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
@@ -72,4 +76,5 @@ const Events: React.FC = () => {
   }];
   return;
 };
+
 export default Events;
