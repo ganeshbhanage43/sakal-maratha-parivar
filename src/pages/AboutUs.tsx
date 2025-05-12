@@ -36,7 +36,7 @@ const AboutUs = () => {
           <div className="container-custom">
             <div className="grid md:grid-cols-2 gap-12 items-center bg-slate-50">
               <div className="animate-fade-in-up">
-                <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
+                <h1 className="text-4xl md:text-5xl mb-6 text-left font-extrabold text-orange-500">
                   <span className="text-primary">सकल मराठा परिवार (SMP)</span>
                 </h1>
                 <p className="mb-6 text-lg text-slate-500">सकल मराठा परिवार (SMP) मराठा समाजाला मुख्यतः शैक्षणिक, व्यवसायिक, नोकरी व आर्थिक क्षेत्रात प्रगती करण्यासाठी सतत प्रयत्नशील राहणारी संस्था असून, सोबतच समाजाचे आपण काहीतरी देणे लागतो या भावनेने वैद्यकीय क्षेत्रात समाजातील सर्व घटकांना सतत मदत करत आहे व भविष्यात करत राहणार आहे</p>
