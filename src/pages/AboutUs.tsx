@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -10,12 +9,10 @@ import { Slider } from '@/components/ui/slider';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Heart, Users, GraduationCap, Home, Briefcase, FileText, Calendar, ChartBar, Info } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
-
 const AboutUs = () => {
   const [donationAmount, setDonationAmount] = useState<number>(25);
   const [customAmount, setCustomAmount] = useState<string>('');
   const presetAmounts = [10, 25, 50, 100];
-
   const handleDonationSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const amount = customAmount ? parseInt(customAmount, 10) : donationAmount;
@@ -25,22 +22,19 @@ const AboutUs = () => {
       duration: 5000
     });
   };
-
   const selectAmount = (amount: number) => {
     setDonationAmount(amount);
     setCustomAmount('');
   };
-
   const handleCustomAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCustomAmount(e.target.value);
   };
-
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow pt-20">
         <section className="py-16 bg-white">
           <div className="container-custom">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-12 items-center bg-slate-50">
               <div className="animate-fade-in-up">
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
                   <span className="text-primary">सकल मराठा परिवार (SMP)</span>
@@ -63,7 +57,7 @@ const AboutUs = () => {
         </section>
 
         <section className="py-16 bg-gray-50">
-          <div className="container-custom">
+          <div className="container-custom bg-cyan-50">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800">
               आमचा <span className="text-primary">प्रवास</span>
             </h2>
@@ -78,23 +72,23 @@ const AboutUs = () => {
 
             <div className="space-y-8 mt-12">
               <Card className="bg-white shadow-lg">
-                <CardHeader>
+                <CardHeader className="bg-purple-300">
                   <CardTitle className="text-2xl font-bold flex items-center gap-2">
                     <Info size={24} className="text-primary" /> पार्श्वभूमी माहिती:
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="bg-slate-50">
                   <p className="text-gray-600 text-lg">सकल मराठा परिवार मधील मराठा बांधव समाजकार्यात जवळपास 2016 पासून काम करत आहेत. सुरुवातीपासूनच मराठा समाजाच्या शैक्षणिक, व्यावसायिक, आरोग्य व नोकरी संबंधित अनेक उपक्रमांमध्ये वेळोवेळी जमेल त्या पद्धतीने व वेगवेगळ्या संघटनांच्या माध्यमातून प्रत्येकाने आपले महत्त्वपूर्ण योगदान दिलेले आहे. ही सर्व कामे करत असताना बऱ्याचदा समोरासमोर झालेल्या भेटी मधून असे निदर्शनास आले, की एका सुनियोजित आणि कॉमन प्लॅटफॉर्मची गरज आहे. म्हणूनच सकल मराठा परिवार मधील काही सदस्यांनी मिळून या संघटनेची स्थापना करण्याचा निर्णय घेतला व त्या माध्यमातून वर नमूद केलेल्या उपक्रमा सहित इतरही बरेच मराठा हिताचे कार्यक्रम राबवण्याचा प्रयत्न केला जात आहे.</p>
                 </CardContent>
               </Card>
               
               <Card className="bg-white shadow-lg">
-                <CardHeader>
+                <CardHeader className="bg-purple-300">
                   <CardTitle className="text-2xl font-bold flex items-center gap-2">
                     <FileText size={24} className="text-primary" /> आव्हाने आणि भविष्यातील अडचणी:
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="bg-slate-50">
                   <p className="text-gray-600 text-lg">विविध राजकीय पक्षांसोबत जोडलेल्या मराठा तरुणांमध्ये जागृती करून त्यांच्यामध्ये मराठावाद जोपासणे गरजेचे आहे. एक कट्टर मराठा म्हणून आपल्या सोबत जोडलेल्या प्रत्येक बांधवाने संघटनेचे ध्येय समजून घेऊन त्या दिशेने जमेल त्या पातळीवर जबाबदारी घेऊन प्रयत्न केले पाहिजेत.</p>
                   
                   <p className="text-gray-600 text-lg mt-4">मराठा तरुणांमध्ये क्षमता असूनही नौकऱ्या अभावी वाढती बेरोजगारी व त्यामुळे येणाऱ्या नैराश्यातुन काही तरुण गुन्हेगारी कडे वळण्याची शक्यता असू शकते व त्यामुळे त्यांचा दैनंदिन जीवनातील कुटुंबावर होणारा परिणाम यासाठी कायमस्वरूपी उपाययोजना करणे.</p>
@@ -102,12 +96,12 @@ const AboutUs = () => {
               </Card>
               
               <Card className="bg-white shadow-lg">
-                <CardHeader>
+                <CardHeader className="bg-purple-300">
                   <CardTitle className="text-2xl font-bold flex items-center gap-2">
                     <Calendar size={24} className="text-primary" /> भविष्यातील सामान्य नियोजन:
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="bg-slate-50">
                   <p className="text-gray-600 text-lg">एखाद्या समाजामध्ये राहत असलेल्या सदस्यांची संख्या त्या समाजाची ताकद ठरू शकते. परंतु हे तेव्हाच शक्य होईल जेव्हा तो समाज आणि त्यामध्ये राहत असलेल्या प्रत्येक व्यक्ती आणि सदस्यांमध्ये एकीची भावना असेल. महाराष्ट्रातील मराठा समाजाच्या संख्येबद्दल सर्वजण अवगत आहेतच, पण एवढी मोठी संख्या असून सुद्धा मराठा समाजामध्ये एकीच्या भावनेची उणीव कायम भासत राहते. ही उणीव भासण्याचे एक महत्त्वाचे कारण म्हणजे मराठा समाजातील श्रीमंत आणि गरीब यांच्यामधील रुंदावत चाललेली दरी होय.</p>
                   
                   <p className="text-gray-600 text-lg mt-4">सकल मराठा परिवारामध्ये सहभागी होणाऱ्या सदस्यांपैकी बहुतांश लोक सामान्य मध्यमवर्गीय किंवा गरीब कुटुंबातील आहेत. श्रीमंत वर्गातील मराठा बांधवांची आपल्या सोबत येण्याची इच्छा असून सुद्धा त्यांच्या वैयक्तिक राजकीय, सामाजिक किंवा पारिवारिक महत्त्वकांक्षा जपण्यासाठी ते प्रत्यक्षपणे आपला सहभाग दर्शवू शकत नाही. या सगळ्यांमध्ये एक सकारात्मक गोष्ट अशी, की सकल मराठा परिवारासोबत सधन वर्गातील मराठा समाज अप्रत्यक्षपणे जोडला गेलेला/जात आहे. सामान्य वर्गातील सदस्यांनी आपापल्या परीने संघटनेतील उपक्रमांमध्ये आपला वेळ देऊन जबाबदारी पार पाडण्याची गरज आहे.</p>
@@ -123,12 +117,12 @@ const AboutUs = () => {
               </Card>
               
               <Card className="bg-white shadow-lg">
-                <CardHeader>
+                <CardHeader className="bg-purple-300">
                   <CardTitle className="text-2xl font-bold flex items-center gap-2">
                     <ChartBar size={24} className="text-primary" /> आर्थिक विहंगावलोकन:
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="bg-slate-50">
                   <p className="text-gray-600 text-lg">सकल मराठा परिवार संघटना कुठल्याही प्रकारच्या आर्थिक व्यवहारांमध्ये सहभाग घेत नाही. तसेच एखाद्या बांधवाच्या मेडिकल इमर्जन्सी मध्ये हॉस्पिटल साठी येणाऱ्या खर्चामध्ये मदत म्हणून पोस्ट केव्हा मेसेजेस अप्रूव करत नाही.</p>
                   
                   <p className="text-gray-600 text-lg mt-4">सकल मराठा परिवार च्या माध्यमातून कुठल्याही प्रकारचे प्रॉडक्ट्स किंवा उत्पादने यांची विक्री केली जात नाही.</p>
@@ -138,12 +132,12 @@ const AboutUs = () => {
               </Card>
               
               <Card className="bg-white shadow-lg">
-                <CardHeader>
+                <CardHeader className="bg-purple-300">
                   <CardTitle className="text-2xl font-bold flex items-center gap-2">
                     <Users size={24} className="text-primary" /> सोशल मीडिया आणि ऑनलाइन उपस्थिती:
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="bg-slate-50">
                   <p className="text-gray-600 text-lg">आधुनिक युगात संवाद आणि जागरुकता वाढविण्यासाठी सोशल मीडिया एक महत्त्वपूर्ण माध्यम बनले आहे. सकल मराठा परिवार फेसबुक, इन्स्टाग्राम, आणि व्हाट्सएप यासारख्या विविध सोशल मीडिया प्लॅटफॉर्मवर सक्रिय आहे.</p>
                   
                   <p className="text-gray-600 text-lg mt-4">आमच्या ऑनलाइन उपस्थितीमुळे आम्हाला अधिक लोकांपर्यंत पोहोचण्यास मदत होते आणि आमच्या उपक्रमांबद्दल जागरूकता वाढविण्यास मदत होते. आमच्या सोशल मीडिया हँडल्सचा वापर करून आपण आमच्या कार्यक्रमांविषयी अपडेट मिळवू शकता आणि आमच्याशी संवाद साधू शकता.</p>
@@ -291,5 +285,4 @@ const AboutUs = () => {
       <Footer />
     </div>;
 };
-
 export default AboutUs;
