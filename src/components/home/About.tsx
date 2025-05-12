@@ -1,7 +1,9 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+
 const About: React.FC = () => {
   return <section className="section-padding bg-white">
       <div className="container-custom">
@@ -11,7 +13,11 @@ const About: React.FC = () => {
               संस्थेचा <span className="text-primary">परिचय</span>
             </h2>
             <p className="text-gray-600 mb-6 text-lg">सकल मराठा परिवार (SMP) मराठा समाजाला मुख्यतः शैक्षणिक, व्यवसायिक, नोकरी व आर्थिक क्षेत्रात प्रगती करण्यासाठी सतत प्रयत्नशील राहणारी संस्था असून, सोबतच समाजाचे आपण काहीतरी देणे लागतो या भावनेने वैद्यकीय क्षेत्रात समाजातील सर्व घटकांना सतत मदत करत आहे व भविष्यात करत राहणार आहे. </p>
-            <p className="text-gray-600 mb-8 text-lg">सामाजिक उपक्रमांच्या माध्यमातून मराठा तरुण पिढी मध्ये मराठा विकासाचे बीज रोवून एक कट्टर मराठा फळी तयार करणे, हेच आमचे उद्दिष्ट आहे.</p>
+            
+            <p className="text-gray-600 mb-3 text-lg"><strong>मिशन :-</strong> (short term) सामाजिक उपक्रमांच्या माध्यमातून मराठा तरुण पिढी मध्ये मराठा विकासाचे बीज रोवून एक कट्टर मराठा फळी तयार करणे.</p>
+            
+            <p className="text-gray-600 mb-8 text-lg"><strong>व्हिजन :-</strong> (Long Term) मराठा समाजातील तरुण पिढीला भविष्यात सामाजिक, आर्थिक, राजकीय, शैक्षणिक, नोकरी, व्यावसायिक इत्यादी प्रत्येक क्षेत्रात अग्रस्थानी आणणे.</p>
+            
             <Button asChild className="group">
               <Link to="/about" className="flex items-center gap-2">
                 अधिक माहितीसाठी
@@ -30,4 +36,5 @@ const About: React.FC = () => {
       </div>
     </section>;
 };
+
 export default About;
