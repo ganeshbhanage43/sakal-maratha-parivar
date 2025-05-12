@@ -1,80 +1,83 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import { Calendar, ArrowRight, MapPin, Clock } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Calendar, MapPin, Users } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
 
-interface EventCardProps {
-  image: string;
-  title: string;
-  date: string;
-  time: string;
-  location: string;
-  link: string;
-}
+// Define the FC (Functional Component) for Events properly
+const Events: React.FC = () => {
+  const navigate = useNavigate();
 
-const EventCard: React.FC<EventCardProps> = ({
-  image,
-  title,
-  date,
-  time,
-  location,
-  link
-}) => {
-  return <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full flex flex-col group">
-      <div className="relative overflow-hidden">
-        <img src={image} alt={title} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
-        <div className="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
-          <Calendar size={14} />
-          <span>{date}</span>
+  const handleViewAllClick = () => {
+    navigate("/events");
+    window.scrollTo(0, 0);
+  };
+
+  const upcomingEvents = [
+    {
+      id: 1,
+      title: "आरक्षण बचाओ रैली",
+      date: "2023-05-15",
+      location: "पुणे, महाराष्ट्र",
+      attendees: 500
+    },
+    {
+      id: 2,
+      title: "शैक्षणिक मार्गदर्शन शिबिर",
+      date: "2023-06-22",
+      location: "नागपूर, महाराष्ट्र",
+      attendees: 300
+    },
+    {
+      id: 3,
+      title: "रक्तदान शिबिर",
+      date: "2023-07-10",
+      location: "मुंबई, महाराष्ट्र",
+      attendees: 200
+    }
+  ];
+
+  return (
+    <section className="py-16 bg-white">
+      <div className="container-custom">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          <span className="text-primary">कार्यक्रम</span>
+        </h2>
+        
+        <div className="grid md:grid-cols-3 gap-8">
+          {upcomingEvents.map((event) => (
+            <Card key={event.id} className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-4">{event.title}</h3>
+                <div className="space-y-2 text-gray-600">
+                  <div className="flex items-center gap-2">
+                    <Calendar size={18} className="text-primary" />
+                    <span>{event.date}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin size={18} className="text-primary" />
+                    <span>{event.location}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Users size={18} className="text-primary" />
+                    <span>{event.attendees} उपस्थिती</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
-      </div>
-      <div className="p-6 flex-grow flex flex-col">
-        <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">{title}</h3>
-        <div className="flex items-center text-gray-600 mb-2">
-          <Clock size={16} className="mr-2" />
-          <span>{time}</span>
-        </div>
-        <div className="flex items-center text-gray-600 mb-4">
-          <MapPin size={16} className="mr-2" />
-          <span>{location}</span>
-        </div>
-        <div className="mt-auto">
-          <Button asChild variant="ghost" className="group">
-            <Link to={link} className="flex items-center text-primary font-medium" onClick={() => window.scrollTo(0, 0)}>
-              अधिक माहितीसाठी
-              <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </Link>
+        
+        <div className="text-center mt-12">
+          <Button onClick={handleViewAllClick} variant="outline" className="gap-2">
+            सर्व कार्यक्रम पहा
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
           </Button>
         </div>
       </div>
-    </div>;
-};
-
-const Events: React.FC = () => {
-  const events = [{
-    image: "https://images.unsplash.com/photo-1582213782179-e0d4d3cce817?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    title: "Annual Charity Gala",
-    date: "May 15, 2025",
-    time: "6:00 PM - 10:00 PM",
-    location: "Grand Hotel, Downtown",
-    link: "/events/charity-gala"
-  }, {
-    image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    title: "Community Health Fair",
-    date: "June 2, 2025",
-    time: "10:00 AM - 4:00 PM",
-    location: "City Park",
-    link: "/events/health-fair"
-  }, {
-    image: "https://images.unsplash.com/photo-1475483768296-6163e08872a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    title: "Youth Leadership Workshop",
-    date: "June 20, 2025",
-    time: "9:00 AM - 3:00 PM",
-    location: "Community Center",
-    link: "/events/leadership-workshop"
-  }];
-  return;
+    </section>
+  );
 };
 
 export default Events;
