@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -45,6 +44,18 @@ const PhotoGallery: React.FC = () => {
           src: "/lovable-uploads/fda3ceef-e6cc-4008-85e1-6d437127f784.png",
           alt: "शिवाजी महाराज जयंती चित्रकला स्पर्धा",
           caption: "छत्रपति शिवाजी महाराज जयंती निमित्त ऑनलाईन चित्रकला व वक्तृत्व स्पर्धा"
+        },
+        {
+          id: 5,
+          src: "/lovable-uploads/8c9c689d-78d5-4fb1-9af3-27279320de7d.png",
+          alt: "राजमाता जिजाऊ जन्मोत्सव निमित्त कार्यक्रम",
+          caption: "राजमाता जिजाऊ जन्मोत्सव निमित्त कार्यक्रम"
+        },
+        {
+          id: 6,
+          src: "/lovable-uploads/737b7cfe-70f8-4bb7-b308-6dc971c73453.png",
+          alt: "ऑनलाईन चित्रकला व वक्तृत्व स्पर्धा",
+          caption: "छत्रपति शिवाजी महाराज जयंती निमित्त ऑनलाईन चित्रकला व वक्तृत्व स्पर्धा"
         }
       ]
     },
@@ -76,6 +87,12 @@ const PhotoGallery: React.FC = () => {
           src: "/lovable-uploads/851068df-0ca5-426f-80aa-fbce73973b9a.png",
           alt: "अँबुलन्स सेवा",
           caption: "सकल मराठा परिवार अँबुलन्स सेवा"
+        },
+        {
+          id: 5,
+          src: "/lovable-uploads/42f3cfe9-68fe-4863-929a-04a0987305c8.png",
+          alt: "रक्तदान कार्यक्रम",
+          caption: "सकल मराठा परिवार रक्तदान कार्यक्रम"
         }
       ]
     },
@@ -107,6 +124,12 @@ const PhotoGallery: React.FC = () => {
           src: "/lovable-uploads/f458a54c-ac79-4ef4-b4bc-ce58beda4eff.png",
           alt: "सकल मराठा परिवार प्रतिनिधी समारोह",
           caption: "प्रमाणपत्र वितरण कार्यक्रम"
+        },
+        {
+          id: 5,
+          src: "/lovable-uploads/12b6063e-6f94-4bf3-8458-abb10abf022b.png",
+          alt: "सकल मराठा परिवार प्रमाणपत्र वितरण",
+          caption: "सकल मराठा परिवार प्रमाणपत्र वितरण समारोह"
         }
       ]
     },
@@ -138,6 +161,12 @@ const PhotoGallery: React.FC = () => {
           src: "/lovable-uploads/e60b88e7-11b9-4555-8465-015064c09d91.png",
           alt: "शैक्षणिक कार्यक्रम",
           caption: "सकल मराठा परिवार शैक्षणिक कार्यक्रम"
+        },
+        {
+          id: 5,
+          src: "/lovable-uploads/0eabfb54-9bb9-4e7f-a73e-af7f1d67511d.png",
+          alt: "शिष्यवृत्ती वितरण कार्यक्रम",
+          caption: "सकल मराठा परिवार शिष्यवृत्ती वितरण कार्यक्रम"
         }
       ]
     },
