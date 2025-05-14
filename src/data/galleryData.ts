@@ -56,6 +56,12 @@ export const galleryData: GalleryCategory[] = [
         src: "/lovable-uploads/737b7cfe-70f8-4bb7-b308-6dc971c73453.png",
         alt: "ऑनलाईन चित्रकला व वक्तृत्व स्पर्धा",
         caption: "छत्रपति शिवाजी महाराज जयंती निमित्त ऑनलाईन चित्रकला व वक्तृत्व स्पर्धा"
+      },
+      {
+        id: 7,
+        src: "/lovable-uploads/8c421ff2-a487-49f8-a635-e32ad59152f6.png",
+        alt: "सकल मराठा परिवार कार्यक्रम",
+        caption: "सभागृह में सकल मराठा परिवार का विशेष कार्यक्रम"
       }
     ]
   },
