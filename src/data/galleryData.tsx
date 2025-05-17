@@ -1,5 +1,5 @@
-
-import { ImageOutlined, Images } from 'lucide-react';
+import React from 'react';
+import { ImageIcon, ImagesIcon } from 'lucide-react';
 
 export interface GalleryImage {
   id: number;
@@ -11,7 +11,7 @@ export interface GalleryImage {
 export interface GalleryCategory {
   id: string;
   title: string;
-  icon: JSX.Element;
+  icon: React.ReactNode;
   images: GalleryImage[];
 }
 
@@ -19,7 +19,7 @@ export const galleryData: GalleryCategory[] = [
   {
     id: 'events',
     title: 'सामाजिक कार्यक्रम',
-    icon: <ImageOutlined className={"h-5 w-5"} />,
+    icon: <ImageIcon className="h-5 w-5" />,
     images: [
       {
         id: 1,
@@ -68,7 +68,7 @@ export const galleryData: GalleryCategory[] = [
   {
     id: 'charity',
     title: 'सेवाकार्य कार्यक्रम',
-    icon: <Images className="h-5 w-5" />,
+    icon: <ImagesIcon className="h-5 w-5" />,
     images: [
       {
         id: 1,
@@ -105,7 +105,7 @@ export const galleryData: GalleryCategory[] = [
   {
     id: 'members',
     title: 'सदस्य व प्रतिनिधी',
-    icon: <Images className="h-5 w-5" />,
+    icon: <ImagesIcon className="h-5 w-5" />,
     images: [
       {
         id: 1,
@@ -142,7 +142,7 @@ export const galleryData: GalleryCategory[] = [
   {
     id: 'social-work',
     title: 'समाज सहायता कार्य',
-    icon: <Images className="h-5 w-5" />,
+    icon: <ImagesIcon className="h-5 w-5" />,
     images: [
       {
         id: 1,
@@ -179,7 +179,7 @@ export const galleryData: GalleryCategory[] = [
   {
     id: 'community',
     title: 'सांस्कृतिक कार्यक्रम',
-    icon: <Images className="h-5 w-5" />,
+    icon: <ImagesIcon className="h-5 w-5" />,
     images: [
       {
         id: 1,
