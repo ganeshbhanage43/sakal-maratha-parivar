@@ -19,7 +19,7 @@ export const galleryData: GalleryCategory[] = [
   {
     id: 'events',
     title: 'सामाजिक कार्यक्रम',
-    icon: <ImageOutlined className="h-5 w-5" />,
+    icon: <ImageOutlined className={"h-5 w-5"} />,
     images: [
       {
         id: 1,
